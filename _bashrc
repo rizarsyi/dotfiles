@@ -1,0 +1,21 @@
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# for examples
+
+# If not running interactively, don't do anything
+if [[ -n "$PS1" ]]; then
+    export BASH_HOME=~/.bash
+    export EDITOR='nano'
+    export IMAGE_VIEWER='gthumb'
+    export BASH_THEME='equator'
+    export TERM="xterm-256color"
+
+    source $BASH_HOME/init.sh
+    export PATH=$PATH:$BASH_HOME/bin
+    [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
+    if [[ ! -z `echo $TMUX` ]]; then
+        export TERM='screen-256color'
+    fi
+fi
+
+[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm

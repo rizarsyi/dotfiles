@@ -1,0 +1,9 @@
+if [[ ! -z `which git` && ! -z `which hub` ]]; then
+    alias git=hub
+fi
+
+alias clr=clear
+
+if [[ ! -z `which tmux` ]]; then
+    alias="tmux -2"
+fi
