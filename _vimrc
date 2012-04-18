@@ -1,15 +1,13 @@
 " `vi` compability mode
 set nocompatible
 
-filetype off
-
 " pathogen options
+filetype off
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
-syntax on
-
 filetype plugin indent on
+syntax on
 
 " display options
 set title
@@ -53,8 +51,10 @@ set smartcase
 
 set nospell
 
+set wildmenu
 set wildmode=list:longest,list:full
-set wildignore+=*.o,*.pyc,*.git
+set wildignore+=*.o,*.pyc,*.git,*.hg,*.svn,*.DS_STORE,*.sw?,*.py[co],*.orig
+set completeopt=longest,menuone,preview
 
 " backup options
 set noswapfile
@@ -72,5 +72,12 @@ au FileType ruby setl softtabstop=2 shiftwidth=2 tabstop=2
 au FileType coffee setl softtabstop=2 shiftwidth=2 tabstop=2
 
 nnoremap <F9> :NERDTreeToggle<CR>
-nnoremap <F8> :TagbarToggle<CR>
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+nnoremap <F3> :TagbarToggle<CR>
 nnoremap <F5> :GundoToggle<CR>
+
+" Folding
+set foldmethod=indent
+set nofoldenable
