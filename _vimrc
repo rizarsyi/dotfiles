@@ -71,13 +71,17 @@ au FileType make setl noexpandtab
 au FileType ruby setl softtabstop=2 shiftwidth=2 tabstop=2
 au FileType coffee setl softtabstop=2 shiftwidth=2 tabstop=2
 
-nnoremap <F9> :NERDTreeToggle<CR>
+nnoremap <F2> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-nnoremap <F3> :TagbarToggle<CR>
-nnoremap <F5> :GundoToggle<CR>
+nnoremap <F3> :GundoToggle<CR>
+nnoremap <F4> :TagbarToggle<CR>
 
 " Folding
 set foldmethod=indent
 set nofoldenable
+
+" Powerline
+set laststatus=2
+let g:Powerline_symbols = 'fancy'
