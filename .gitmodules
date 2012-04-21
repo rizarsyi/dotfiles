@@ -34,3 +34,15 @@
 [submodule "_vim/bundle/ctrlp"]
 	path = _vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
+[submodule "_vim/bundle/clam"]
+	path = _vim/bundle/clam
+	url = git://github.com/sjl/clam.vim.git
+[submodule "_vim/bundle/nodejs"]
+	path = _vim/bundle/nodejs
+	url = git://github.com/mmalecki/vim-node.js.git
+[submodule "_vim/bundle/javascript"]
+	path = _vim/bundle/javascript
+	url = git://github.com/pangloss/vim-javascript.git
+[submodule "_vim/bundle/coffee-script"]
+	path = _vim/bundle/coffee-script
+	url = git://github.com/kchmck/vim-coffee-script.git
