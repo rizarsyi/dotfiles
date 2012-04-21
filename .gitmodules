@@ -31,3 +31,6 @@
 [submodule "_vim/bundle/smartinput"]
 	path = _vim/bundle/smartinput
 	url = git://github.com/kana/vim-smartinput.git
+[submodule "_vim/bundle/ctrlp"]
+	path = _vim/bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
