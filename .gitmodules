@@ -4,9 +4,6 @@
 [submodule "_vim/bundle/commentary"]
 	path = _vim/bundle/commentary
 	url = git://github.com/tpope/vim-commentary.git
-[submodule "_vim/bundle/surround"]
-	path = _vim/bundle/surround
-	url = git://github.com/tpope/vim-surround.git
 [submodule "_vim/bundle/gundo"]
 	path = _vim/bundle/gundo
 	url = git://github.com/sjl/gundo.vim.git
@@ -25,3 +22,12 @@
 [submodule "_vim/bundle/fugitive"]
 	path = _vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
+[submodule "_vim/bundle/markdown"]
+	path = _vim/bundle/markdown
+	url = git://github.com/tpope/vim-markdown.git
+[submodule "_vim/bundle/textile"]
+	path = _vim/bundle/textile
+	url = git://github.com/timcharper/textile.vim.git
+[submodule "_vim/bundle/smartinput"]
+	path = _vim/bundle/smartinput
+	url = git://github.com/kana/vim-smartinput.git
