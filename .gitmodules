@@ -58,3 +58,9 @@
 [submodule "_vim/bundle/lesscss"]
 	path = _vim/bundle/lesscss
 	url = git://github.com/groenewege/vim-less.git
+[submodule "_vim/bundle/nginx"]
+	path = _vim/bundle/nginx
+	url = git://github.com/evanmiller/nginx-vim-syntax.git
+[submodule "_vim/bundle/syntastic"]
+	path = _vim/bundle/syntastic
+	url = git://github.com/scrooloose/syntastic.git
