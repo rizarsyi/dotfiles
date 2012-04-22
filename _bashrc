@@ -16,7 +16,6 @@ if [[ -n "$PS1" ]]; then
     if [[ ! -z `echo $TMUX` ]]; then
         export TERM='screen-256color'
     fi
-    [[ -s ~/.Xmodmap ]] && [[ ! -z `which xmodmap` ]] && xmodmap ~/.Xmodmap
 fi
 
 [[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
