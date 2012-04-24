@@ -64,3 +64,6 @@
 [submodule "_vim/bundle/syntastic"]
 	path = _vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
+[submodule "_vim/bundle/phpcomplete"]
+	path = _vim/bundle/phpcomplete
+	url = git://github.com/shawncplus/phpcomplete.vim.git
