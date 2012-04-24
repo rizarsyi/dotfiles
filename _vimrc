@@ -21,6 +21,7 @@ set encoding=utf-8
 set wrap
 set linebreak
 set showcmd
+set laststatus=2
 
 " theme options
 set t_Co=256
@@ -83,5 +84,5 @@ set foldmethod=indent
 set nofoldenable
 
 " Powerline
-set laststatus=2
 let g:Powerline_symbols = 'fancy'
+call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
