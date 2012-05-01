@@ -86,3 +86,6 @@ set nofoldenable
 " Powerline
 let g:Powerline_symbols = 'fancy'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
+
+" Zen coding - ctrl+e
+let g:user_zen_expandabbr_key = '<c-e>'
