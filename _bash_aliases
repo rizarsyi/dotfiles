@@ -7,3 +7,5 @@ alias clr=clear
 if [[ ! -z `which tmux` ]]; then
     alias="tmux -2"
 fi
+
+alias ack=ack-grep

@@ -1,4 +1,5 @@
 " `vi` compability mode
+"
 set nocompatible
 
 " pathogen options
@@ -89,3 +90,6 @@ call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 " Zen coding - ctrl+e
 let g:user_zen_expandabbr_key = '<c-e>'
+
+" Use ack instead of grep
+set grepprg=ack-grep\ -a

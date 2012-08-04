@@ -1,0 +1,4 @@
+--type-set
+docs=.markdown,.mkdn,.md,.mdown,.rst,.textile
+--pager=less -R
+--sort-files
