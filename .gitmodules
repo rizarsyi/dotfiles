@@ -25,9 +25,6 @@
 [submodule "_vim/bundle/markdown"]
 	path = _vim/bundle/markdown
 	url = git://github.com/tpope/vim-markdown.git
-[submodule "_vim/bundle/textile"]
-	path = _vim/bundle/textile
-	url = git://github.com/timcharper/textile.vim.git
 [submodule "_vim/bundle/smartinput"]
 	path = _vim/bundle/smartinput
 	url = git://github.com/kana/vim-smartinput.git
