@@ -26,7 +26,7 @@ set laststatus=2
 
 " theme options
 set t_Co=256
-color twilight
+color vwilight
 
 " formatting options
 set tabstop=4
