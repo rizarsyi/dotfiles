@@ -1,5 +1,4 @@
 " `vi` compability mode
-"
 set nocompatible
 
 " pathogen options
@@ -76,6 +75,7 @@ au FileType coffee setl softtabstop=2 shiftwidth=2 tabstop=2
 nnoremap <F2> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let NERDTreeIgnore = ['\.pyc$']
 
 nnoremap <F3> :GundoToggle<CR>
 nnoremap <F4> :TagbarToggle<CR>
