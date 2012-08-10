@@ -31,9 +31,6 @@
 [submodule "_vim/bundle/ctrlp"]
 	path = _vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule "_vim/bundle/clam"]
-	path = _vim/bundle/clam
-	url = git://github.com/sjl/clam.vim.git
 [submodule "_vim/bundle/nodejs"]
 	path = _vim/bundle/nodejs
 	url = git://github.com/mmalecki/vim-node.js.git
