@@ -11,7 +11,7 @@ if [[ -n "$PS1" ]]; then
     export TERM="xterm-256color"
 
     source $BASH_HOME/init.sh
-    export PATH=$PATH:$BASH_HOME/bin
+    export PATH=$PATH:~/.bin
     [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
     if [[ ! -z `echo $TMUX` ]]; then
         export TERM='screen-256color'
