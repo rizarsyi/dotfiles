@@ -65,7 +65,7 @@ set nowritebackup
 " highlight JSON as JavaScript
 au BufRead,BufNewFile *.json set ft=javascript
 
-" ensure Makefille always use tabs instead of spaces
+" ensure Makefile always use tabs instead of spaces
 au FileType make setl noexpandtab
 
 " set 2-spaces indentation for Ruby and Coffeescript files
@@ -93,3 +93,6 @@ let g:user_zen_expandabbr_key = '<c-e>'
 
 " Use ack instead of grep
 set grepprg=ack-grep\ -a
+
+" trailing whitespace
+autocmd BufWritePre * :%s#\($\n\s*\)\+\%$##
