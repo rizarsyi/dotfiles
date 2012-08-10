@@ -1,4 +1,6 @@
 _vim/.netrwhist
+
+# Music player
 _cmus/autosave
 _cmus/command-history
 _cmus/lib.pl
@@ -6,3 +8,7 @@ _cmus/playlist.pl
 _cmus/search-history
 _cmus/socket
 _cmus/cache
+
+# Chat
+_weechat/logs
+_weechat/weechat.log
