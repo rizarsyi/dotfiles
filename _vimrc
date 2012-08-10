@@ -95,4 +95,5 @@ let g:user_zen_expandabbr_key = '<c-e>'
 set grepprg=ack-grep\ -a
 
 " trailing whitespace
-autocmd BufWritePre * :%s#\($\n\s*\)\+\%$##
+autocmd BufWritePre * :silent! %s/\s\+$//e
+autocmd BufWritePre * :silent! %s#\($\n\)\+\%$##
