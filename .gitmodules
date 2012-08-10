@@ -64,3 +64,9 @@
 [submodule "_vim/bundle/vwilight"]
 	path = _vim/bundle/vwilight
 	url = git://github.com/jaywilliams/vim-vwilight.git
+[submodule "_vim/bundle/abolish"]
+	path = _vim/bundle/abolish
+	url = git://github.com/tpope/vim-abolish.git
+[submodule "_vim/bundle/surround"]
+	path = _vim/bundle/surround
+	url = git://github.com/tpope/vim-surround.git
