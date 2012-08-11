@@ -17,6 +17,6 @@ FILES=$( find $DIR -maxdepth 1 -name '_*')
 for file in $FILES; do
     dotfile=${file/$DIR\/_/$HOME\/.}
     echo "symlinking ${file} to ${dotfile}"
-    [[ -e $dotfile ]] && rm $dotfile
+    [[ -e $dotfile ]] && rm -rf $dotfile
     ln -s $file $dotfile -f
 done
