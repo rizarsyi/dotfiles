@@ -19,9 +19,6 @@
 [submodule "_vim/bundle/powerline"]
 	path = _vim/bundle/powerline
 	url = git://github.com/Lokaltog/vim-powerline.git
-[submodule "_vim/bundle/fugitive"]
-	path = _vim/bundle/fugitive
-	url = git://github.com/tpope/vim-fugitive.git
 [submodule "_vim/bundle/markdown"]
 	path = _vim/bundle/markdown
 	url = git://github.com/tpope/vim-markdown.git
@@ -31,9 +28,6 @@
 [submodule "_vim/bundle/ctrlp"]
 	path = _vim/bundle/ctrlp
 	url = git://github.com/kien/ctrlp.vim.git
-[submodule "_vim/bundle/nodejs"]
-	path = _vim/bundle/nodejs
-	url = git://github.com/mmalecki/vim-node.js.git
 [submodule "_vim/bundle/javascript"]
 	path = _vim/bundle/javascript
 	url = git://github.com/pangloss/vim-javascript.git
@@ -67,3 +61,6 @@
 [submodule "_vim/bundle/surround"]
 	path = _vim/bundle/surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "_vim/bundle/fugitive"]
+	path = _vim/bundle/fugitive
+	url = git://github.com/tpope/vim-fugitive.git
