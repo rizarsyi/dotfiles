@@ -3,14 +3,14 @@
 alias sudo='sudo '
 
 # Hub is best aliased as Git
-if [[ ! -z `which git` && ! -z `which hub` ]]; then
+if [[ ! -z `which git` && `which ruby` && ! -z `which hub` ]]; then
     alias git=hub
 fi
 
 # Less chars to type for clearing the console screen
 alias clr=clear
 
-# Force `tmux` to assume the terminal supports 256 colours. 
+# Force `tmux` to assume the terminal supports 256 colours.
 if [[ ! -z `which tmux` ]]; then
     alias="tmux -2"
 fi
