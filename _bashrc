@@ -5,17 +5,22 @@
 # If not running interactively, don't do anything
 if [[ -n "$PS1" ]]; then
     export BASH_HOME=~/.bash
+
     export EDITOR='vim'
     export IMAGE_VIEWER='gthumb'
     export BASH_THEME='equator'
-    export TERM="xterm-256color"
 
-    source $BASH_HOME/init.sh
-    export PATH=$PATH:~/.bin
-    [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
+    export PATH=$PATH:~/.bin:~/.rbenv/bin
+
+    eval "$(rbenv init -)"
+
     if [[ ! -z `echo $TMUX` ]]; then
         export TERM='screen-256color'
+    else
+        export TERM="xterm-256color"
     fi
-fi
 
-[[ -s ~/.rvm/scripts/rvm ]] && source ~/.rvm/scripts/rvm
+    [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
+
+    source $BASH_HOME/init.sh
+fi
