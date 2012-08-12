@@ -3,7 +3,7 @@
 alias sudo='sudo '
 
 # Hub is best aliased as Git
-if [[ ! -z `which git` && `which ruby` && ! -z `which hub` ]]; then
+if [[ ! -z `which git` && ! -z `which ruby` && ! -z `which hub` ]]; then
     alias git=hub
 fi
 
