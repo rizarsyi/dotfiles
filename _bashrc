@@ -10,9 +10,7 @@ if [[ -n "$PS1" ]]; then
     export IMAGE_VIEWER='gthumb'
     export BASH_THEME='equator'
 
-    export PATH=$PATH:~/.bin:~/.rbenv/bin
-
-    eval "$(rbenv init -)"
+    export PATH=$PATH:$HOME/.bin:$HOME/.rvm/bin
 
     if [[ ! -z `echo $TMUX` ]]; then
         export TERM='screen-256color'
@@ -20,7 +18,8 @@ if [[ -n "$PS1" ]]; then
         export TERM="xterm-256color"
     fi
 
-    [[ -s ~/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
-
     source $BASH_HOME/init.sh
+
+    [[ -s $HOME/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
+    [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 fi
