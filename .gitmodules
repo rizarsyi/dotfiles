@@ -64,6 +64,12 @@
 [submodule "_vim/bundle/fugitive"]
 	path = _vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "_rbenv"]
-	path = _rbenv
-	url = https://github.com/sstephenson/rbenv.git
+[submodule "_vim/bundle/vimerl"]
+	path = _vim/bundle/vimerl
+	url = git://github.com/oscarh/vimerl.git
+[submodule "_vim/bundle/elixir"]
+	path = _vim/bundle/elixir
+	url = git://github.com/elixir-lang/vim-elixir.git
+[submodule "_vim/bundle/moonscript"]
+	path = _vim/bundle/moonscript
+	url = git://github.com/leafo/moonscript-vim.git
