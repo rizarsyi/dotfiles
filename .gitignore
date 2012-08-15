@@ -11,4 +11,4 @@ _cmus/cache
 
 # Chat
 _weechat/logs
-_weechat/weechat.log
+_weechat/*.log
