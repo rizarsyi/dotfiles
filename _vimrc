@@ -6,8 +6,11 @@ filetype off
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
+
 filetype plugin indent on
 syntax on
+
+let mapleader = ","
 
 " display options
 set title
@@ -55,7 +58,6 @@ set nospell
 set wildmenu
 set wildmode=list:longest,list:full
 set wildignore+=*.o,*.pyc,*.git,*.hg,*.svn,*.DS_STORE,*.sw?,*.py[co],*.orig
-set completeopt=longest,menuone,preview
 
 " backup options
 set noswapfile
@@ -97,3 +99,13 @@ set grepprg=ack-grep\ -a
 " trailing whitespace
 autocmd BufWritePre * :silent! %s/\s\+$//e
 autocmd BufWritePre * :silent! %s#\($\n\)\+\%$##
+
+" omnicompletion
+set ofu=syntaxcomplete#Complete
+set completeopt=longest,menuone,preview
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
+
+" Supertab
+let g:SuperTabDefaultCompletionType = "context"
