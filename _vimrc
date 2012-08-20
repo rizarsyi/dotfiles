@@ -106,6 +106,9 @@ set completeopt=longest,menuone,preview
 autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-
 " Supertab
 let g:SuperTabDefaultCompletionType = "context"
+
+" Autopairs
+let g:AutoPairsShortcutFastWrap = "<C-f>"
+let g:AutoPairsMapCR = 0
