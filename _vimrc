@@ -107,7 +107,11 @@ set completeopt=longest,menuone,preview
 " SuperTab
 let g:SuperTabDefaultCompletionType = 'context'
 let g:SuperTabClosePreviewOnPopupClose = 1
-imap <nul> <C-r>="\<C-x>\<C-o>"<CR>
+autocmd FileType *
+    \ if &omnifunc != '' |
+    \   call SuperTabChain(&omnifunc, "<c-p>") |
+    \   call SuperTabSetDefaultCompletionType("<c-x><c-u>") |
+    \ endif
 
 " Autopairs
 let g:AutoPairsShortcutFastWrap = "<C-f>"
