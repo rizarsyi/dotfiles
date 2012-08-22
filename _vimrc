@@ -103,11 +103,11 @@ autocmd BufWritePre * :silent! %s#\($\n\)\+\%$##
 " omnicompletion
 set ofu=syntaxcomplete#Complete
 set completeopt=longest,menuone,preview
-autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
-autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-" Supertab
-let g:SuperTabDefaultCompletionType = "context"
+" SuperTab
+let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabClosePreviewOnPopupClose = 1
+imap <nul> <C-r>="\<C-x>\<C-o>"<CR>
 
 " Autopairs
 let g:AutoPairsShortcutFastWrap = "<C-f>"
