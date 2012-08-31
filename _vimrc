@@ -1,6 +1,10 @@
 " `vi` compability mode
 set nocompatible
 
+if $TMUX != "" && $TERM != "screen-256color"
+    set term=screen-256color
+endif
+
 " pathogen options
 filetype off
 runtime bundle/pathogen/autoload/pathogen.vim
