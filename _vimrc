@@ -71,6 +71,9 @@ set nowritebackup
 " highlight JSON as JavaScript
 au BufRead,BufNewFile *.json set ft=javascript
 
+" highlight JSON as JavaScript
+au BufRead,BufNewFile *.jinja2 set ft=jinja
+
 " ensure Makefile always use tabs instead of spaces
 au FileType make setl noexpandtab
 
