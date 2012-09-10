@@ -34,9 +34,6 @@
 [submodule "_vim/bundle/jinja2"]
 	path = _vim/bundle/jinja2
 	url = git://github.com/Glench/Vim-Jinja2-Syntax.git
-[submodule "_vim/bundle/zencoding"]
-	path = _vim/bundle/zencoding
-	url = git://github.com/mattn/zencoding-vim.git
 [submodule "_vim/bundle/html5"]
 	path = _vim/bundle/html5
 	url = git://github.com/othree/html5.vim.git
@@ -73,3 +70,6 @@
 [submodule "_vim/bundle/auto-pairs"]
 	path = _vim/bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "_vim/bundle/sparkup"]
+	path = _vim/bundle/sparkup
+	url = git://github.com/bingaman/vim-sparkup.git
