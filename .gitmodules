@@ -73,3 +73,6 @@
 [submodule "_vim/bundle/sparkup"]
 	path = _vim/bundle/sparkup
 	url = git://github.com/bingaman/vim-sparkup.git
+[submodule "_vim/bundle/golang"]
+	path = _vim/bundle/golang
+	url = git://github.com/jnwhiteh/vim-golang.git
