@@ -71,7 +71,7 @@ set nowritebackup
 " highlight JSON as JavaScript
 au BufRead,BufNewFile *.json set ft=javascript
 
-" highlight JSON as JavaScript
+" highlight Jinja2 template as Jinja
 au BufRead,BufNewFile *.jinja2 set ft=jinja
 
 " ensure Makefile always use tabs instead of spaces
@@ -80,6 +80,9 @@ au FileType make setl noexpandtab
 " set 2-spaces indentation for Ruby and Coffeescript files
 au FileType ruby setl softtabstop=2 shiftwidth=2 tabstop=2
 au FileType coffee setl softtabstop=2 shiftwidth=2 tabstop=2
+
+" HTML and similar templates should not be limited to 80 columns
+au FileType html,jinja setl textwidth=0
 
 nnoremap <F2> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
