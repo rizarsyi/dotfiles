@@ -28,3 +28,5 @@ alias ports='netstat -napt | ack -i LISTEN'
 alias x='exit'
 
 alias remote-ip='curl ifconfig.me'
+
+alias t='t --task-dir ~/.tasks --list tasks'
