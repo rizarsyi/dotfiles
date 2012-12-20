@@ -8,6 +8,9 @@
     ci = commit
     cia = commit --amend
     lg = log --graph --pretty=format:'%C(yellow)%h %Creset~ %ce%n✒ %Cblue%s%n⌚ %ci %n'
+    df = diff
+    fo = fetch origin
+    fu = fetch upstream
 [color]
     branch = auto
     status = auto
