@@ -12,3 +12,5 @@ _cmus/cache
 # Chat
 _weechat/logs
 _weechat/*.log
+.fab_tasks~
+fabfile.pyc
