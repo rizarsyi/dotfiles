@@ -73,3 +73,6 @@
 [submodule "_vim/bundle/golang"]
 	path = _vim/bundle/golang
 	url = git://github.com/jnwhiteh/vim-golang.git
+[submodule "_vim/bundle/strftimedammit"]
+	path = _vim/bundle/strftimedammit
+	url = git://github.com/sjl/strftimedammit.vim.git
