@@ -14,5 +14,6 @@ if [[ -n "$PS1" ]]; then
     source $BASH_HOME/init.sh
 
     [[ -s $HOME/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
+    [[ -s $HOME/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
     [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 fi
