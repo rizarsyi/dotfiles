@@ -98,6 +98,7 @@ set nofoldenable
 
 " Powerline
 let g:Powerline_symbols = 'fancy'
+let g:Powerline_stl_path_style = 'short'
 call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 " Zen coding - ctrl+e
