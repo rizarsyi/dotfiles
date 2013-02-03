@@ -14,3 +14,6 @@ _weechat/logs
 _weechat/*.log
 .fab_tasks~
 fabfile.pyc
+_ipython/profile_default/log/
+_ipython/profile_default/pid/
+_ipython/profile_default/security/
