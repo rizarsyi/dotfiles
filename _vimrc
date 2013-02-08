@@ -127,3 +127,6 @@ autocmd FileType *
 " Autopairs
 let g:AutoPairsShortcutFastWrap = "<C-f>"
 let g:AutoPairsMapCR = 0
+
+" Faster save based on https://coderwall.com/p/cumarg
+inoremap jj <Esc>:w<CR>
