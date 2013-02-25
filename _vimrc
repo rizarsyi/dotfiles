@@ -130,3 +130,9 @@ let g:AutoPairsMapCR = 0
 
 " Faster save based on https://coderwall.com/p/cumarg
 inoremap jj <Esc>:w<CR>
+
+" Highlight the overflow text
+" http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
+highlight OverLength ctermbg=red ctermfg=white
+au FileType python match OverLength /\%81v.\+/
+au FileType php match OverLength /\%121v.\+/
