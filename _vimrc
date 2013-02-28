@@ -136,3 +136,6 @@ inoremap jj <Esc>:w<CR>
 highlight OverLength ctermbg=red ctermfg=white
 au FileType python match OverLength /\%81v.\+/
 au FileType php match OverLength /\%121v.\+/
+
+let g:gitgutter_enabled = 0
+nnoremap <F6> :call ToggleGitGutter()<CR>
