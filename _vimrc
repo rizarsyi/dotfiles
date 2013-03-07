@@ -77,6 +77,9 @@ au BufRead,BufNewFile *.jinja2 set ft=jinja
 " ensure Makefile always use tabs instead of spaces
 au FileType make setl noexpandtab
 
+" ensure Go always use tabs instead of spaces
+au FileType go setl noexpandtab
+
 " set 2-spaces indentation for Ruby and Coffeescript files
 au FileType ruby setl softtabstop=2 shiftwidth=2 tabstop=2
 au FileType coffee setl softtabstop=2 shiftwidth=2 tabstop=2
@@ -127,9 +130,6 @@ autocmd FileType *
 " Autopairs
 let g:AutoPairsShortcutFastWrap = "<C-f>"
 let g:AutoPairsMapCR = 0
-
-" Faster save based on https://coderwall.com/p/cumarg
-inoremap jj <Esc>:w<CR>
 
 " Highlight the overflow text
 " http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
