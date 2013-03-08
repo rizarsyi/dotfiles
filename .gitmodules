@@ -85,3 +85,6 @@
 [submodule "_vim/bundle/ultisnips"]
 	path = _vim/bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
+[submodule "_vim/bundle/zencoding"]
+	path = _vim/bundle/zencoding
+	url = git://github.com/mattn/zencoding-vim.git
