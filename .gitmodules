@@ -67,9 +67,6 @@
 [submodule "_vim/bundle/auto-pairs"]
 	path = _vim/bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
-[submodule "_vim/bundle/sparkup"]
-	path = _vim/bundle/sparkup
-	url = git://github.com/bingaman/vim-sparkup.git
 [submodule "_vim/bundle/golang"]
 	path = _vim/bundle/golang
 	url = git://github.com/jnwhiteh/vim-golang.git
@@ -85,3 +82,6 @@
 [submodule "_vim/bundle/gitgutter"]
 	path = _vim/bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "_vim/bundle/ultisnips"]
+	path = _vim/bundle/ultisnips
+	url = git://github.com/SirVer/ultisnips.git
