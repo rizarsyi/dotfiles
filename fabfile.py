@@ -35,4 +35,4 @@ def remove():
 def update_submodules():
     """Updates all registered submodules (requires git).
     """
-    local('git submodule foreach "git pull"')
+    local('git submodule foreach "git checkout master && git pull"')
