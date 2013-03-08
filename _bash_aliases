@@ -31,4 +31,4 @@ alias remote-ip='curl ifconfig.me'
 
 alias t='t --task-dir ~/.tasks --list tasks'
 
-alias serve='python -m SimpleHTTPServer'
+alias srv='python -m BaseHTTPServer '

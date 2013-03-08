@@ -11,6 +11,7 @@
     df = diff
     fo = fetch origin
     fu = fetch upstream
+    pom = push origin master
 [color]
     branch = auto
     status = auto
