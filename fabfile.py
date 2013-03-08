@@ -25,7 +25,6 @@ def remove():
     """Uninstalls dotfiles from $HOME directory.
     """
     src = [f for f in _listdir(_src_dir) if f.startswith('_')]
-    src = [f for f in _listdir(_src_dir) if f.startswith('_')]
     for df in src:
         target = op.join(_dst_dir, df.replace('_', '.', 1))
         if op.exists(target):
