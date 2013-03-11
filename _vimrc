@@ -11,7 +11,7 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-set rtp+=$HOME/.powerline/powerline/bindings/vim
+"set rtp+=$HOME/.powerline/powerline/bindings/vim
 
 filetype plugin indent on
 syntax on
@@ -100,11 +100,6 @@ nnoremap <F4> :TagbarToggle<CR>
 " Folding
 set foldmethod=indent
 set nofoldenable
-
-" Powerline
-"let g:Powerline_symbols = 'fancy'
-"let g:Powerline_stl_path_style = 'short'
-" call Pl#Theme#InsertSegment('ws_marker', 'after', 'lineinfo')
 
 " Zen coding - ctrl+e
 let g:user_zen_expandabbr_key = '<c-e>'

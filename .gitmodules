@@ -88,3 +88,6 @@
 [submodule "_fonts"]
 	path = _fonts
 	url = git://github.com/Lokaltog/powerline-fonts.git
+[submodule "_vim/bundle/jellybeans"]
+	path = _vim/bundle/jellybeans
+	url = git://github.com/nanotech/jellybeans.vim.git
