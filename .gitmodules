@@ -82,3 +82,9 @@
 [submodule "_vim/bundle/zencoding"]
 	path = _vim/bundle/zencoding
 	url = git://github.com/mattn/zencoding-vim.git
+[submodule "_powerline"]
+	path = _powerline
+	url = git://github.com/Lokaltog/powerline.git
+[submodule "_fonts"]
+	path = _fonts
+	url = git://github.com/Lokaltog/powerline-fonts.git
