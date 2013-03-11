@@ -18,7 +18,14 @@ def install():
         target = op.join(_dst_dir, df.replace('_', '.', 1))
         if op.exists(target):
             local('rm -rf %s' % target)
-        local('cp -R %s %s' % (source, target))
+        local('cp -Rf %s %s' % (source, target))
+
+    # fix Powerline
+    local("cp -f ~/.powerline/font/PowerlineSymbols.otf ~/.fonts/")
+    if not op.exists("/etc/fonts/conf.d/10-powerline-symbols.conf"):
+        local("sudo cp -f ~/.powerline/font/10-powerline-symbols.conf "
+              "/etc/fonts/conf.d/")
+    local("fc-cache -vf ~/.fonts")
 
 
 def remove():

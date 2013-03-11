@@ -9,9 +9,6 @@ Install:
     git clone git://github.com/iromli/dotfiles.git --recursive
     cd /path/to/dotfiles
     fab install
-    cp ~/.powerline/font/PowerlineSymbols.otf ~/.fonts/
-    [sudo] cp ~/.powerline/font/10-powerline-symbols.conf /etc/fonts/conf.d
-    fc-cache -vf ~/.fonts
 
 Uninstall:
 
@@ -22,8 +19,8 @@ Uninstall:
 
 Basically, any files/directories prefixed with `_` will be copied to
 `$HOME` directory as `.` files/directory.
-Note, any existing `.` files/directories copied from this repo will be replaced,
-so make sure you backup important files/directory manually.
+
+**WARNING**: make sure you backup important files/directory manually.
 
 Source:
 
