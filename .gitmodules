@@ -85,3 +85,6 @@
 [submodule "_fonts"]
 	path = _fonts
 	url = git://github.com/Lokaltog/powerline-fonts.git
+[submodule "_vim/bundle/ack"]
+	path = _vim/bundle/ack
+	url = git://github.com/mileszs/ack.vim.git
