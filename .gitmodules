@@ -67,9 +67,6 @@
 [submodule "_vim/bundle/vimux"]
 	path = _vim/bundle/vimux
 	url = git://github.com/benmills/vimux.git
-[submodule "_vim/bundle/ipython"]
-	path = _vim/bundle/ipython
-	url = git://github.com/ivanov/vim-ipython.git
 [submodule "_vim/bundle/gitgutter"]
 	path = _vim/bundle/gitgutter
 	url = git://github.com/airblade/vim-gitgutter.git
