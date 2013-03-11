@@ -20,12 +20,6 @@ def install():
             local('rm -rf %s' % target)
         local('cp -R %s %s' % (source, target))
 
-    local("ln -s ~/.powerline/font/PowerlineSymbols.otf ~/.fonts/")
-    local(
-        "sudo ln -s ~/.powerline/font/10-powerline-symbols.conf "
-        "/etc/fonts/conf.d -f")
-    local("fc-cache -vf ~/.fonts")
-
 
 def remove():
     """Uninstalls dotfiles from $HOME directory.
@@ -35,10 +29,3 @@ def remove():
         target = op.join(_dst_dir, df.replace('_', '.', 1))
         if op.exists(target):
             local('rm -rf %s' % target)
-
-
-def update_submodules():
-    """Updates all registered submodules (requires git).
-    """
-    local("git submodule update --init")
-    local('git submodule foreach "git pull"')
