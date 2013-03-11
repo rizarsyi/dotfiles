@@ -88,3 +88,6 @@
 [submodule "_vim/bundle/ack"]
 	path = _vim/bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
+[submodule "_vim/bundle/rainbow_parentheses"]
+	path = _vim/bundle/rainbow_parentheses
+	url = git://github.com/kien/rainbow_parentheses.vim.git

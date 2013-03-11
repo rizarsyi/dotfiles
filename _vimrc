@@ -136,3 +136,9 @@ au FileType php match OverLength /\%121v.\+/
 
 let g:gitgutter_enabled = 0
 nnoremap <F6> :call ToggleGitGutter()<CR>
+
+" Rainbow Parentheses
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
