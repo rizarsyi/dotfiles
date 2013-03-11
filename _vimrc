@@ -11,7 +11,7 @@ runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 call pathogen#helptags()
 
-"set rtp+=$HOME/.powerline/powerline/bindings/vim
+set rtp+=$HOME/.powerline/powerline/bindings/vim
 
 filetype plugin indent on
 syntax on
