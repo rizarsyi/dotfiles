@@ -23,8 +23,8 @@ Uninstall:
     cd /path/to/dotfiles
     fab remove
 
-## Fork and Modify as You Want!
+## Fork and Modify!
 
-[http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked][holman-blog]
+Because [dotfiles are meant to be forked][holman-blog]
 
 [holman-blog]: http://zachholman.com/2010/08/dotfiles-are-meant-to-be-forked
