@@ -43,9 +43,6 @@
 [submodule "_vim/bundle/syntastic"]
 	path = _vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
-[submodule "_vim/bundle/vwilight"]
-	path = _vim/bundle/vwilight
-	url = git://github.com/jaywilliams/vim-vwilight.git
 [submodule "_vim/bundle/abolish"]
 	path = _vim/bundle/abolish
 	url = git://github.com/tpope/vim-abolish.git
