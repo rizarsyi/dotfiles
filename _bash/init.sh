@@ -115,9 +115,6 @@ if [[ ! -z `which git` && ! -z `which ruby` && ! -z `which hub` ]]; then
     alias git=hub
 fi
 
-# Less chars to type for clearing the console screen
-alias clr=clear
-
 # Force `tmux` to assume the terminal supports 256 colours.
 if [[ ! -z `which tmux` ]]; then
     alias="tmux -2"
@@ -132,8 +129,6 @@ alias tpoff="synclient TouchPadOff=true"
 
 # List of reserved ports, use `sudo ports` for more details
 alias ports='netstat -napt | ack -i LISTEN'
-
-alias x='exit'
 
 alias remote-ip='curl ifconfig.me'
 
