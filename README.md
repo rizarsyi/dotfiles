@@ -33,7 +33,6 @@ Source:
     ├── _vim
     ├── _weechat
     ├── _ackrc
-    ├── _bash_aliases
     ├── _bash_logout
     ├── _bash_profile
     ├── _bashrc
@@ -55,7 +54,6 @@ Destination:
     ├── .vim
     ├── .weechat
     ├── .ackrc
-    ├── .bash_aliases
     ├── .bash_logout
     ├── .bash_profile
     ├── .bashrc
