@@ -22,7 +22,7 @@ Basically, any files/directories prefixed with `_` will be copied to
 
 **WARNING**: make sure you backup important files/directory manually.
 
-Source:
+Source (`/path/to/dotfiles`):
 
     .
     ├── _bash
@@ -43,7 +43,7 @@ Source:
     ├── _tmux.conf
     └── _vimrc
 
-Destination:
+Destination (`$HOME`):
 
     .
     ├── .bash
