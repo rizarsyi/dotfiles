@@ -88,3 +88,6 @@
 [submodule "_vim/bundle/tabular"]
 	path = _vim/bundle/tabular
 	url = git://github.com/godlygeek/tabular.git
+[submodule "_vim/bundle/clam"]
+	path = _vim/bundle/clam
+	url = git://github.com/sjl/clam.vim.git
