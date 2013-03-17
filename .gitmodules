@@ -85,3 +85,6 @@
 [submodule "_vim/bundle/auto-pairs"]
 	path = _vim/bundle/auto-pairs
 	url = git://github.com/jiangmiao/auto-pairs.git
+[submodule "_vim/bundle/tabular"]
+	path = _vim/bundle/tabular
+	url = git://github.com/godlygeek/tabular.git
