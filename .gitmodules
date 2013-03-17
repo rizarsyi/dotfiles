@@ -55,9 +55,6 @@
 [submodule "_vim/bundle/easymotion"]
 	path = _vim/bundle/easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
-[submodule "_vim/bundle/auto-pairs"]
-	path = _vim/bundle/auto-pairs
-	url = git://github.com/jiangmiao/auto-pairs.git
 [submodule "_vim/bundle/golang"]
 	path = _vim/bundle/golang
 	url = git://github.com/jnwhiteh/vim-golang.git
@@ -85,3 +82,6 @@
 [submodule "_vim/bundle/rainbow_parentheses"]
 	path = _vim/bundle/rainbow_parentheses
 	url = git://github.com/kien/rainbow_parentheses.vim.git
+[submodule "_vim/bundle/auto-pairs"]
+	path = _vim/bundle/auto-pairs
+	url = git://github.com/jiangmiao/auto-pairs.git
