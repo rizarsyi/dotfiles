@@ -91,3 +91,6 @@
 [submodule "_vim/bundle/clam"]
 	path = _vim/bundle/clam
 	url = git://github.com/sjl/clam.vim.git
+[submodule "_vim/bundle/recover"]
+	path = _vim/bundle/recover
+	url = git://github.com/chrisbra/Recover.vim.git
