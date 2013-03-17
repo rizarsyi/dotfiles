@@ -143,3 +143,6 @@ au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+
+" Toggles paste mode (http://is.gd/FxlJAH)
+set pastetoggle=<F9>
