@@ -31,6 +31,7 @@ set wrap
 set linebreak
 set showcmd
 set laststatus=2
+set showbreak=↪
 
 " theme options
 set t_Co=256
