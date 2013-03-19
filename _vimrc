@@ -136,7 +136,7 @@ au FileType python match OverLength /\%81v.\+/
 au FileType php match OverLength /\%121v.\+/
 
 let g:gitgutter_enabled = 0
-nnoremap <F6> :call ToggleGitGutter()<CR>
+nnoremap <F6> :call GitGutterToggle()<CR>
 
 " Rainbow Parentheses
 au VimEnter * RainbowParenthesesToggle
