@@ -94,3 +94,6 @@
 [submodule "_vim/bundle/recover"]
 	path = _vim/bundle/recover
 	url = git://github.com/chrisbra/Recover.vim.git
+[submodule "_vim/bundle/pytest"]
+	path = _vim/bundle/pytest
+	url = git://github.com/alfredodeza/pytest.vim.git
