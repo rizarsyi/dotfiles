@@ -9,14 +9,14 @@ if [[ -n "$PS1" ]]; then
     export IMAGE_VIEWER='gthumb'
     export BASH_THEME='equator'
     export TERM="xterm-256color"
-    export PATH=$PATH:$HOME/.bin:$HOME/bin:$HOME/.rbenv/bin
+    export PATH=$PATH:$HOME/.bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/.nodenv/bin
     export IPYTHONDIR=$HOME/.ipython
     export WORKON_HOME=$HOME/.virtualenv
 
     source $BASH_HOME/init.sh
 
-    [[ -s $HOME/.nvm/nvm.sh ]] && source ~/.nvm/nvm.sh
     [[ -s $HOME/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
     [[ ! -z `which virtualenvwrapper.sh` ]] && source `which virtualenvwrapper.sh`
     eval "$(rbenv init -)"
+    eval "$(nodenv init -)"
 fi
