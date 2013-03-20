@@ -12,11 +12,17 @@ if [[ -n "$PS1" ]]; then
     export PATH=$PATH:$HOME/.bin:$HOME/bin:$HOME/.rbenv/bin:$HOME/.nodenv/bin
     export IPYTHONDIR=$HOME/.ipython
     export WORKON_HOME=$HOME/.virtualenv
-
     source $BASH_HOME/init.sh
 
-    [[ -s $HOME/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+    # virtualenvwrapper!
     [[ ! -z `which virtualenvwrapper.sh` ]] && source `which virtualenvwrapper.sh`
-    eval "$(rbenv init -)"
-    eval "$(nodenv init -)"
+
+    # PHPs!
+    [[ -s $HOME/.phpbrew/bashrc ]] && source ~/.phpbrew/bashrc
+
+    # Rubies!
+    [[ ! -z `which rbenv` ]] && eval "$(rbenv init -)"
+
+    # NodeJSes!
+    [[ ! -z `which nodenv` ]] && eval "$(nodenv init -)"
 fi
