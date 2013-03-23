@@ -43,9 +43,6 @@
 [submodule "_vim/bundle/syntastic"]
 	path = _vim/bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
-[submodule "_vim/bundle/abolish"]
-	path = _vim/bundle/abolish
-	url = git://github.com/tpope/vim-abolish.git
 [submodule "_vim/bundle/fugitive"]
 	path = _vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
