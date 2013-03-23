@@ -93,7 +93,8 @@ au FileType html,jinja setl textwidth=0
 nnoremap <F2> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.egg-info$', '^dist$', '^build$', '^__pycache__$']
+let NERDTreeHightlightCursorline=1
 
 nnoremap <F3> :GundoToggle<CR>
 nnoremap <F4> :TagbarToggle<CR>
