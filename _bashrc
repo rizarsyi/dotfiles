@@ -13,6 +13,12 @@ if [[ -n "$PS1" ]]; then
     export IPYTHONDIR=$HOME/.ipython
     export WORKON_HOME=$HOME/.virtualenv
 
+    # Pythons!
+    if [[ -s $HOME/.pyenv/bin/pyenv ]]; then
+        export PATH=$PATH:$HOME/.pyenv/bin
+        eval "$(pyenv init -)"
+    fi
+
     # virtualenvwrapper!
     [[ ! -z `which virtualenvwrapper.sh` ]] && source `which virtualenvwrapper.sh`
 
