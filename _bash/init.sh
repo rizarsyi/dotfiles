@@ -165,15 +165,6 @@ function mkcd() {
     mkdir -p "$1" && cd "$1"
 }
 
-# print working file
-function pwf() {
-    if [[ -n "$1" ]]; then
-        echo "$PWD/$1"
-    else
-        echo "$PWD"
-    fi
-}
-
 # go to upper directory
 function up() {
     num=$1
