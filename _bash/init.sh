@@ -140,6 +140,8 @@ alias kernel_name='uname -s'
 alias kernel_release='uname -r'
 alias kernel_version='uname -v'
 
+alias dirsize='du -sh'
+
 
 #==============================================================================
 # Functions
