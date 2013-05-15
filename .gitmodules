@@ -88,3 +88,6 @@
 [submodule "_vim/bundle/recover"]
 	path = _vim/bundle/recover
 	url = git://github.com/chrisbra/Recover.vim.git
+[submodule "_vim/bundle/haml"]
+	path = _vim/bundle/haml
+	url = git://github.com/tpope/vim-haml.git
