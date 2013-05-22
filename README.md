@@ -25,7 +25,7 @@ Basically, any files/directories prefixed with `_` will be copied to
 Source (`/path/to/dotfiles`):
 
     .
-    ├── _bash
+    ├── _bash.d
     ├── _bin
     ├── _fonts
     ├── _ipython
@@ -46,7 +46,7 @@ Source (`/path/to/dotfiles`):
 Destination (`$HOME`):
 
     .
-    ├── .bash
+    ├── .bash.d
     ├── .bin
     ├── .fonts
     ├── .ipython
