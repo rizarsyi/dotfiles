@@ -58,9 +58,6 @@
 [submodule "_vim/bundle/strftimedammit"]
 	path = _vim/bundle/strftimedammit
 	url = git://github.com/sjl/strftimedammit.vim.git
-[submodule "_vim/bundle/gitgutter"]
-	path = _vim/bundle/gitgutter
-	url = git://github.com/airblade/vim-gitgutter.git
 [submodule "_vim/bundle/ultisnips"]
 	path = _vim/bundle/ultisnips
 	url = git://github.com/SirVer/ultisnips.git
