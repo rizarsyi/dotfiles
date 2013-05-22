@@ -43,5 +43,9 @@ if [[ -n "$PS1" ]]; then
         eval "$(erlenv init -)"
     fi
 
+    # Go
+    export GOROOT=/usr/local/go
+    export PATH=$PATH:$GOROOT/bin
+
     source $BASH_HOME/init.sh
 fi
