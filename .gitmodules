@@ -46,9 +46,6 @@
 [submodule "_vim/bundle/fugitive"]
 	path = _vim/bundle/fugitive
 	url = git://github.com/tpope/vim-fugitive.git
-[submodule "_vim/bundle/elixir"]
-	path = _vim/bundle/elixir
-	url = git://github.com/elixir-lang/vim-elixir.git
 [submodule "_vim/bundle/easymotion"]
 	path = _vim/bundle/easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
