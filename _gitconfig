@@ -12,6 +12,7 @@
     fo = fetch origin
     fu = fetch upstream
     pom = push origin master
+    pod = push origin develop
 [color]
     branch = auto
     status = auto
