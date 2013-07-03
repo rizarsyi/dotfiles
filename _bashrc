@@ -44,8 +44,10 @@ if [[ -n "$PS1" ]]; then
     fi
 
     # Go
-    export GOROOT=/usr/local/go
-    export PATH=$PATH:$GOROOT/bin
+    if [[ -s $HOME/.goenv/bin/goenv ]]; then
+        export PATH=$PATH:$HOME/.goenv/bin
+        eval "$(goenv init -)"
+    fi
 
     source $BASH_HOME/init.sh
 fi
