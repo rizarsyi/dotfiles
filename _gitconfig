@@ -13,6 +13,8 @@
     fu = fetch upstream
     pom = push origin master
     pod = push origin develop
+    mom = merge origin/master
+    mod = merge origin/develop
 [color]
     branch = auto
     status = auto
