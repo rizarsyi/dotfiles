@@ -151,3 +151,8 @@ if 'VIRTUAL_ENV' in os.environ:
     activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
     execfile(activate_this, dict(__file__=activate_this))
 EOF
+
+" Airline
+let g:airline_powerline_fonts=1
+let g:airline_theme='dark'
+let g:ttimeoutlen=50

@@ -58,9 +58,6 @@
 [submodule "_vim/bundle/zencoding"]
 	path = _vim/bundle/zencoding
 	url = git://github.com/mattn/zencoding-vim.git
-[submodule "_powerline"]
-	path = _powerline
-	url = git://github.com/Lokaltog/powerline.git
 [submodule "_vim/bundle/ack"]
 	path = _vim/bundle/ack
 	url = git://github.com/mileszs/ack.vim.git
@@ -82,3 +79,6 @@
 [submodule "_vim/bundle/haml"]
 	path = _vim/bundle/haml
 	url = git://github.com/tpope/vim-haml.git
+[submodule "_vim/bundle/airline"]
+	path = _vim/bundle/airline
+	url = git://github.com/bling/vim-airline.git

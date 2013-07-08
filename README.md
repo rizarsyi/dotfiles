@@ -6,14 +6,14 @@ One single repo to rule 'em all!
 
 Install:
 
-    git clone git://github.com/iromli/dotfiles.git --recursive
-    cd /path/to/dotfiles
-    fab install
+    $ git clone git://github.com/iromli/dotfiles.git --recursive
+    $ cd /path/to/dotfiles
+    $ fab install
 
 Uninstall:
 
-    cd /path/to/dotfiles
-    fab remove
+    $ cd /path/to/dotfiles
+    $ fab remove
 
 ## How Does It Work?
 
@@ -29,7 +29,6 @@ Source (`/path/to/dotfiles`):
     ├── _bin
     ├── _fonts
     ├── _ipython
-    ├── _powerline
     ├── _vim
     ├── _weechat
     ├── _ackrc
@@ -50,7 +49,6 @@ Destination (`$HOME`):
     ├── .bin
     ├── .fonts
     ├── .ipython
-    ├── .powerline
     ├── .vim
     ├── .weechat
     ├── .ackrc
