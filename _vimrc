@@ -83,9 +83,10 @@ au FileType make setl noexpandtab
 " ensure Go always use tabs instead of spaces
 au FileType go setl noexpandtab
 
-" set 2-spaces indentation for Ruby and Coffeescript files
+" set 2-spaces indentation for Ruby, Coffeescript, and YAML files
 au FileType ruby setl softtabstop=2 shiftwidth=2 tabstop=2
 au FileType coffee setl softtabstop=2 shiftwidth=2 tabstop=2
+au FileType yaml setl softtabstop=2 shiftwidth=2 tabstop=2
 
 " HTML and similar templates should not be limited to 80 columns
 au FileType html,jinja setl textwidth=0
