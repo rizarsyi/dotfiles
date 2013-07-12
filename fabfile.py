@@ -16,6 +16,8 @@ def install():
     for df in src:
         source = op.join(_src_dir, df)
         target = op.join(_dst_dir, df.replace('_', '.', 1))
+        if op.exists(target):
+            local('rm -rf %s' % target)
         local('cp -Rf %s %s' % (source, target))
 
     if not op.exists("/etc/fonts/conf.d/10-powerline-symbols.conf"):
