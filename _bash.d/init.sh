@@ -204,3 +204,9 @@ function arch_name() {
 function os_name() {
     echo "`kernel_name` `head -1 /etc/issue`" | sed 's/\\.//g'
 }
+
+# setup git config globally
+function ggconf() {
+    git config --global user.name "Isman Firmansyah"
+    git config --global user.email "isman.firmansyah@gmail.com"
+}
