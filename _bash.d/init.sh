@@ -142,6 +142,14 @@ alias kernel_version='uname -v'
 
 alias dirsize='du -sh'
 
+# highlight sourcecode
+if [[ ! -z `which pygmentize` ]]; then
+    alias ccat="pygmentize -g"
+fi
+
+# go to previous directory
+alias back="cd $OLDPWD"
+
 
 #==============================================================================
 # Functions
@@ -188,11 +196,6 @@ function up() {
         cd ../
         num=$(( $num - 1 ))
     done
-}
-
-# go to previous directory
-function back() {
-    cd $OLDPWD
 }
 
 # get architecture name
