@@ -29,7 +29,6 @@ Source (`/path/to/dotfiles`):
     ├── _bin
     ├── _fonts
     ├── _ipython
-    ├── _vim
     ├── _weechat
     ├── _ackrc
     ├── _bash_logout
@@ -40,7 +39,6 @@ Source (`/path/to/dotfiles`):
     ├── _gitconfig
     ├── README.md
     ├── _tmux.conf
-    └── _vimrc
 
 Destination (`$HOME`):
 
@@ -49,7 +47,6 @@ Destination (`$HOME`):
     ├── .bin
     ├── .fonts
     ├── .ipython
-    ├── .vim
     ├── .weechat
     ├── .ackrc
     ├── .bash_logout
@@ -58,7 +55,6 @@ Destination (`$HOME`):
     ├── .gemrc
     ├── .gitconfig
     ├── .tmux.conf
-    └── .vimrc
 
 ## Fork and Modify!
 
