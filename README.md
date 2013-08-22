@@ -27,7 +27,6 @@ Source (`/path/to/dotfiles`):
     .
     ├── _bash.d
     ├── _bin
-    ├── _fonts
     ├── _ipython
     ├── _weechat
     ├── _ackrc
@@ -45,7 +44,6 @@ Destination (`$HOME`):
     .
     ├── .bash.d
     ├── .bin
-    ├── .fonts
     ├── .ipython
     ├── .weechat
     ├── .ackrc

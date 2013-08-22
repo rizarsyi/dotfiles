@@ -20,11 +20,6 @@ def install():
             source = '%s/*' % source
         local('cp -Rf %s %s' % (source, target))
 
-    if not op.exists("/etc/fonts/conf.d/10-powerline-symbols.conf"):
-        local("sudo cp -f ~/.fonts/10-powerline-symbols.conf "
-              "/etc/fonts/conf.d/")
-    local("fc-cache -vf ~/.fonts")
-
 
 def remove():
     """Uninstalls dotfiles from $HOME directory.
