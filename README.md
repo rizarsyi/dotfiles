@@ -25,14 +25,10 @@ Basically, any files/directories prefixed with `_` will be copied to
 Source (`/path/to/dotfiles`):
 
     .
-    ├── _bash.d
     ├── _bin
     ├── _ipython
     ├── _weechat
     ├── _ackrc
-    ├── _bash_logout
-    ├── _bash_profile
-    ├── _bashrc
     ├── fabfile.py
     ├── _gemrc
     ├── _gitconfig
@@ -42,14 +38,10 @@ Source (`/path/to/dotfiles`):
 Destination (`$HOME`):
 
     .
-    ├── .bash.d
     ├── .bin
     ├── .ipython
     ├── .weechat
     ├── .ackrc
-    ├── .bash_logout
-    ├── .bash_profile
-    ├── .bashrc
     ├── .gemrc
     ├── .gitconfig
     ├── .tmux.conf
