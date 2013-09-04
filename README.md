@@ -25,7 +25,6 @@ Basically, any files/directories prefixed with `_` will be copied to
 Source (`/path/to/dotfiles`):
 
     .
-    ├── _bin
     ├── _ipython
     ├── _weechat
     ├── _ackrc
@@ -38,7 +37,6 @@ Source (`/path/to/dotfiles`):
 Destination (`$HOME`):
 
     .
-    ├── .bin
     ├── .ipython
     ├── .weechat
     ├── .ackrc
