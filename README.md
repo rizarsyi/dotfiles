@@ -26,7 +26,6 @@ Source (`/path/to/dotfiles`):
 
     .
     ├── _ipython
-    ├── _weechat
     ├── _ackrc
     ├── fabfile.py
     ├── _gemrc
@@ -38,11 +37,14 @@ Destination (`$HOME`):
 
     .
     ├── .ipython
-    ├── .weechat
     ├── .ackrc
     ├── .gemrc
     ├── .gitconfig
     ├── .tmux.conf
+
+## Links
+
+* [Git config](http://git-scm.com/book/en/Customizing-Git-Git-Configuration)
 
 ## Fork and Modify!
 
