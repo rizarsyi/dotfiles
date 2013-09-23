@@ -15,34 +15,7 @@ Uninstall:
     $ cd /path/to/dotfiles
     $ fab remove
 
-## How Does It Work?
-
-Basically, any files/directories prefixed with `_` will be copied to
-`$HOME` directory as `.` files/directory.
-
-**WARNING**: make sure you backup important files/directory manually.
-
-Source (`/path/to/dotfiles`):
-
-    .
-    ├── _ipython
-    ├── _ackrc
-    ├── fabfile.py
-    ├── _gemrc
-    ├── _gitconfig
-    ├── README.md
-    ├── _tmux.conf
-
-Destination (`$HOME`):
-
-    .
-    ├── .ipython
-    ├── .ackrc
-    ├── .gemrc
-    ├── .gitconfig
-    ├── .tmux.conf
-
-## Links
+## Useful Links
 
 * [Git config](http://git-scm.com/book/en/Customizing-Git-Git-Configuration)
 
