@@ -1,19 +1,6 @@
-_vim/.netrwhist
-
-# Music player
-_cmus/autosave
-_cmus/command-history
-_cmus/lib.pl
-_cmus/playlist.pl
-_cmus/search-history
-_cmus/socket
-_cmus/cache
-
-# Chat
-_weechat/logs
-_weechat/*.log
-.fab_tasks~
-fabfile.pyc
-_ipython/profile_default/log/
-_ipython/profile_default/pid/
-_ipython/profile_default/security/
+*.log
+*~
+*.pyc
+ipython/.ipython/profile_default/log/
+ipython/.ipython/profile_default/pid/
+ipython/.ipython/profile_default/security/

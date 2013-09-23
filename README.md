@@ -2,19 +2,6 @@
 
 One single repo to rule 'em all!
 
-## Quickstart
-
-Install:
-
-    $ git clone git://github.com/iromli/dotfiles.git --recursive
-    $ cd /path/to/dotfiles
-    $ fab install
-
-Uninstall:
-
-    $ cd /path/to/dotfiles
-    $ fab remove
-
 ## Useful Links
 
 * [Git config](http://git-scm.com/book/en/Customizing-Git-Git-Configuration)
