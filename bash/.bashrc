@@ -44,19 +44,5 @@ if [[ -n "$PS1" ]]; then
         source $HOME/.genma/genma.sh
     fi
 
-    # Elixir
-    if [[ -s $HOME/.elixir ]]; then
-        export PATH=$PATH:$HOME/.elixir/bin
-    fi
-
-    # Android
-    if [[ "${ANDROID_HOME}" = "" ]]; then
-        export ANDROID_HOME=/opt/lib/android-sdk
-    fi
-
-    if [[ $ANDROID_HOME ]]; then
-        export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/build-tools:$ANDROID_HOME/platform-tools
-    fi
-
     source $BASH_HOME/init.sh
 fi
