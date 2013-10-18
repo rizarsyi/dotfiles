@@ -1,58 +1,55 @@
 set nocompatible
 set rtp+=~/.vim/bundle/neobundle.vim/
 
-call neobundle#rc(expand("~/.vim/bundle"))
+call neobundle#rc(expand('~/.vim/bundle'))
 set rtp+=~/.vim/bundle/vwilight/
 
 " Bundles
-NeoBundleFetch "Shougo/neobundle.vim"
-NeoBundle "tpope/vim-fugitive"
-NeoBundle "kien/rainbow_parentheses.vim"
-NeoBundle "tpope/vim-commentary"
-NeoBundle "sjl/gundo.vim"
-NeoBundle "scrooloose/nerdtree"
-NeoBundle "ervandew/supertab"
-NeoBundle "tpope/vim-markdown"
-NeoBundle "kien/ctrlp.vim"
-NeoBundle "pangloss/vim-javascript"
-NeoBundle "othree/html5.vim"
-NeoBundle "evanmiller/nginx-vim-syntax"
-NeoBundle "scrooloose/syntastic"
-NeoBundle "Lokaltog/vim-easymotion"
-NeoBundle "jnwhiteh/vim-golang"
-NeoBundle "SirVer/ultisnips"
-NeoBundle "mileszs/ack.vim"
-NeoBundle "jiangmiao/auto-pairs"
-NeoBundle "godlygeek/tabular"
-NeoBundle "sjl/clam.vim"
-NeoBundle "chrisbra/Recover.vim"
-NeoBundle "tpope/vim-haml"
-NeoBundle "bling/vim-airline"
-NeoBundle "saltstack/salt-vim"
-NeoBundle "elixir-lang/vim-elixir"
-NeoBundle "majutsushi/tagbar"
-NeoBundle "mhinz/vim-signify"
-NeoBundle "mattn/emmet-vim"
-NeoBundle "mitsuhiko/vim-jinja"
-NeoBundle "mitsuhiko/vim-rst"
-NeoBundle "honza/dockerfile.vim"
-NeoBundle "vim-scripts/javacomplete"
-NeoBundle "hsanson/vim-android"
+NeoBundleFetch 'Shougo/neobundle.vim'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'kien/rainbow_parentheses.vim'
+NeoBundle 'tpope/vim-commentary'
+NeoBundle 'sjl/gundo.vim'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'ervandew/supertab'
+NeoBundle 'tpope/vim-markdown'
+NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'pangloss/vim-javascript'
+NeoBundle 'othree/html5.vim'
+NeoBundle 'evanmiller/nginx-vim-syntax'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'Lokaltog/vim-easymotion'
+NeoBundle 'jnwhiteh/vim-golang'
+NeoBundle 'SirVer/ultisnips'
+NeoBundle 'mileszs/ack.vim'
+NeoBundle 'jiangmiao/auto-pairs'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'sjl/clam.vim'
+NeoBundle 'chrisbra/Recover.vim'
+NeoBundle 'tpope/vim-haml'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'saltstack/salt-vim'
+NeoBundle 'mattn/emmet-vim'
+NeoBundle 'mitsuhiko/vim-jinja'
+NeoBundle 'mitsuhiko/vim-rst'
+NeoBundle 'honza/dockerfile.vim'
+NeoBundle 'vim-scripts/javacomplete'
+NeoBundle 'hsanson/vim-android'
 NeoBundle 'garybernhardt/pycomplexity', {'rtp': 'pycomplexity.vim/'}
-NeoBundle "derekwyatt/vim-scala"
+NeoBundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on
 syntax on
 
 " Theming
-if $TMUX != "" && $TERM != "screen-256color"
+if $TMUX != '' && $TERM != 'screen-256color'
     set term=screen-256color
 endif
 
 set t_Co=256
 color vwilight
 
-let mapleader = ","
+let mapleader = ','
 
 " display options
 set title
@@ -125,7 +122,7 @@ au FileType html,jinja setl textwidth=0
 
 nnoremap <F2> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTreeType') && b:NERDTreeType == 'primary') | q | endif
 let NERDTreeIgnore = ['\.pyc$', '\.egg-info$', '^dist$', '^build$', '^__pycache__$']
 let NERDTreeHightlightCursorline=1
 
@@ -152,7 +149,7 @@ let g:SuperTabDefaultCompletionType = 'context'
 let g:SuperTabClosePreviewOnPopupClose = 1
 
 " Autopairs
-let g:AutoPairsShortcutFastWrap = "<C-f>"
+let g:AutoPairsShortcutFastWrap = '<C-f>'
 let g:AutoPairsMapCR = 0
 
 " Highlight the overflow text
@@ -175,6 +172,7 @@ py << EOF
 import os.path
 import sys
 import vim
+
 if 'VIRTUAL_ENV' in os.environ:
     project_base_dir = os.environ['VIRTUAL_ENV']
     sys.path.insert(0, project_base_dir)
@@ -188,12 +186,12 @@ let g:airline_theme='dark'
 let g:ttimeoutlen=50
 
 " Emmet
-let g:user_emmet_leader_key="<C-e>"
+let g:user_emmet_leader_key='<C-e>'
 
 " Clam
 let g:clam_winpos='botright'
 
-" optional F6 mapping to fire :Complexity command
+" Pycomplexity
 nnoremap <silent> <F6> :Complexity<CR>
 
 " Last thing to do with
