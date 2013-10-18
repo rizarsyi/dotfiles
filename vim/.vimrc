@@ -38,6 +38,7 @@ NeoBundle "mitsuhiko/vim-rst"
 NeoBundle "honza/dockerfile.vim"
 NeoBundle "vim-scripts/javacomplete"
 NeoBundle "hsanson/vim-android"
+NeoBundle 'garybernhardt/pycomplexity', {'rtp': 'pycomplexity.vim/'}
 
 filetype plugin indent on
 syntax on
@@ -190,6 +191,9 @@ let g:user_emmet_leader_key="<C-e>"
 
 " Clam
 let g:clam_winpos='botright'
+
+" optional F6 mapping to fire :Complexity command
+nnoremap <silent> <F6> :Complexity<CR>
 
 " Last thing to do with
 NeoBundleCheck
