@@ -37,6 +37,7 @@ NeoBundle 'vim-scripts/javacomplete'
 NeoBundle 'hsanson/vim-android'
 NeoBundle 'garybernhardt/pycomplexity', {'rtp': 'pycomplexity.vim/'}
 NeoBundle 'derekwyatt/vim-scala'
+NeoBundle 'elixir-lang/vim-elixir'
 
 filetype plugin indent on
 syntax on

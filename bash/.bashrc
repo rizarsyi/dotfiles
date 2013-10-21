@@ -34,6 +34,12 @@ if [[ -n "$PS1" ]]; then
         eval "$(erlenv init -)"
     fi
 
+    # Elixir
+    if [[ -s $HOME/.exenv/bin/exenv ]]; then
+        export PATH=$PATH:$HOME/.exenv/bin
+        eval "$(exenv init -)"
+    fi
+
     # Go
     if [[ -s $HOME/.goenv/bin/goenv ]]; then
         export PATH=$PATH:$HOME/.goenv/bin
