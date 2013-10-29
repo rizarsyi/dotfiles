@@ -2,7 +2,7 @@ set nocompatible
 set rtp+=~/.vim/bundle/neobundle.vim/
 
 call neobundle#rc(expand('~/.vim/bundle'))
-set rtp+=~/.vim/bundle/vwilight/
+set rtp+=~/.vim/contrib/vwilight/
 
 " Bundles
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -38,6 +38,8 @@ NeoBundle 'hsanson/vim-android'
 NeoBundle 'garybernhardt/pycomplexity', {'rtp': 'pycomplexity.vim/'}
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'jmcantrell/vim-virtualenv'
+NeoBundle 'roman/golden-ratio'
 
 filetype plugin indent on
 syntax on
@@ -167,19 +169,6 @@ au Syntax * RainbowParenthesesLoadBraces
 
 " Toggles paste mode (http://is.gd/FxlJAH)
 set pastetoggle=<F9>
-
-" Add the virtualenv's site-packages to vim path
-py << EOF
-import os.path
-import sys
-import vim
-
-if 'VIRTUAL_ENV' in os.environ:
-    project_base_dir = os.environ['VIRTUAL_ENV']
-    sys.path.insert(0, project_base_dir)
-    activate_this = os.path.join(project_base_dir, 'bin/activate_this.py')
-    execfile(activate_this, dict(__file__=activate_this))
-EOF
 
 " Airline
 let g:airline_powerline_fonts=1
