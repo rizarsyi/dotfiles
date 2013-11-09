@@ -124,8 +124,6 @@ alias ports='netstat -napt | ack -i LISTEN'
 
 alias remote-ip='curl ifconfig.me'
 
-alias t='t --task-dir ~/.tasks --list tasks'
-
 alias srv='python -m SimpleHTTPServer '
 
 # some more ls aliases
@@ -154,20 +152,6 @@ alias back="cd $OLDPWD"
 #==============================================================================
 # Functions
 #==============================================================================
-
-# run editor to configure bashrc
-function bashrc_configure() {
-    if [[ ! $EDITOR ]]; then
-        EDITOR='nano'
-    fi
-    $EDITOR ~/.bashrc
-}
-
-# reload bashrc
-function bashrc_reload() {
-    source ~/.bashrc
-    echo "reloaded!"
-}
 
 # create directory and go the newly created directory
 function mkcd() {
@@ -206,10 +190,4 @@ function arch_name() {
 # get OS release name
 function os_name() {
     echo "`kernel_name` `head -1 /etc/issue`" | sed 's/\\.//g'
-}
-
-# setup git config globally
-function ggconf() {
-    git config --global user.name "Isman Firmansyah"
-    git config --global user.email "isman.firmansyah@gmail.com"
 }
