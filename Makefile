@@ -1,6 +1,6 @@
 install: install-ack install-bash install-fonts \
-		 install-git install-python install-ruby \
-		 install-tmux
+         install-git install-python install-ruby \
+         install-tmux
 
 install-ack:
 	rm -rf ~/.ackrc
