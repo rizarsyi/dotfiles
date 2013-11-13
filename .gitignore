@@ -4,5 +4,7 @@
 python/ipython/profile_default/log/
 python/ipython/profile_default/pid/
 python/ipython/profile_default/security/
+python/ipython/profile_default/*.sqlite
 vim/vim/bundle/*
+vim/vim/.netrwhist
 !vim/vim/bundle/neobundle.vim
