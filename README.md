@@ -2,6 +2,11 @@
 
 One single repo to rule 'em all!
 
+```sh
+$ git clone --recursive git@github.com:iromli/dotfiles.git
+$ make install
+```
+
 ## Useful Links
 
 * [Git config](http://git-scm.com/book/en/Customizing-Git-Git-Configuration)
