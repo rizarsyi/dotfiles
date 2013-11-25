@@ -4,6 +4,7 @@ One single repo to rule 'em all!
 
 ```sh
 $ git clone --recursive git@github.com:iromli/dotfiles.git
+$ cd dotfiles
 $ make install
 ```
 
