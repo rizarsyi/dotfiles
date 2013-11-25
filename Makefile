@@ -1,6 +1,6 @@
 install: install-ack install-bash install-fonts \
          install-git install-python install-ruby \
-         install-tmux
+         install-tmux install-vim
 
 install-ack:
 	rm -rf ~/.ackrc
@@ -44,5 +44,6 @@ install-tmux:
 install-vim:
 	rm -rf ~/.vim
 	rm -rf ~/.vimrc
+	git submodule update
 	ln -s `pwd`/vim/vim ~/.vim
 	ln -s `pwd`/vim/vimrc ~/.vimrc

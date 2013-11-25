@@ -1,8 +1,8 @@
 set nocompatible
 set rtp+=~/.vim/bundle/neobundle.vim/
 
-call neobundle#rc(expand('~/.vim/bundle'))
-set rtp+=~/.vim/contrib/vwilight/
+call neobundle#rc(expand('~/.vimbundles'))
+set rtp+=~/.vim/bundle/vwilight/
 
 " Bundles
 NeoBundleFetch 'Shougo/neobundle.vim'
@@ -39,7 +39,6 @@ NeoBundle 'garybernhardt/pycomplexity', {'rtp': 'pycomplexity.vim/'}
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'jmcantrell/vim-virtualenv'
-NeoBundle 'roman/golden-ratio'
 
 filetype plugin indent on
 syntax on
@@ -183,6 +182,9 @@ let g:clam_winpos='botright'
 
 " Pycomplexity
 nnoremap <silent> <F6> :Complexity<CR>
+
+" Commentary
+autocmd FileType nginx set commentstring=#\ %s
 
 " Last thing to do with
 NeoBundleCheck
