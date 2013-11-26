@@ -39,6 +39,7 @@ NeoBundle 'garybernhardt/pycomplexity', {'rtp': 'pycomplexity.vim/'}
 NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'jmcantrell/vim-virtualenv'
+NeoBundle 'majutsushi/tagbar'
 
 filetype plugin indent on
 syntax on
@@ -108,19 +109,15 @@ au BufRead,BufNewFile *.json set ft=javascript
 " highlight Jinja2 template as Jinja
 au BufRead,BufNewFile *.jinja2 set ft=jinja
 
-" ensure Makefile always use tabs instead of spaces
-au FileType make setl noexpandtab
-
-" ensure Go always use tabs instead of spaces
-au FileType go setl noexpandtab
+" ensure GO and Makefile always use tabs instead of spaces
+au FileType make,go  setl noexpandtab
 
 " set 2-spaces indentation for Ruby, Coffeescript, and YAML files
-au FileType ruby setl softtabstop=2 shiftwidth=2 tabstop=2
-au FileType coffee setl softtabstop=2 shiftwidth=2 tabstop=2
-au FileType yaml setl softtabstop=2 shiftwidth=2 tabstop=2
+au FileType coffee,yaml,vim,ruby  setl softtabstop=2 shiftwidth=2 tabstop=2
 
 " HTML and similar templates should not be limited to 80 columns
-au FileType html,jinja setl textwidth=0
+au FileType html  setl textwidth=0
+au FileType jinja setl textwidth=0
 
 nnoremap <F2> :NERDTreeToggle<CR>
 autocmd vimenter * if !argc() | NERDTree | endif
@@ -128,8 +125,8 @@ autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTreeType') && b:NERDTree
 let NERDTreeIgnore = ['\.pyc$', '\.egg-info$', '^dist$', '^build$', '^__pycache__$']
 let NERDTreeHightlightCursorline=1
 
+" --- Gundo
 nnoremap <F3> :GundoToggle<CR>
-nnoremap <F4> :TagbarToggle<CR>
 
 " Folding
 set foldmethod=indent
@@ -142,13 +139,29 @@ set grepprg=ack-grep\ -a
 autocmd BufWritePre * :silent! %s/\s\+$//e
 autocmd BufWritePre * :silent! %s#\($\n\)\+\%$##
 
-" omnicompletion
-set ofu=syntaxcomplete#Complete
-set completeopt=longest,menuone,preview
+" --- Omnicompletion
+" Enable omni completion. (Ctrl-X Ctrl-O)
+autocmd FileType html,markdown setl ofu=htmlcomplete#CompleteTags
+autocmd FileType javascript setl ofu=javascriptcomplete#CompleteJS
+autocmd FileType python setl ofu=pythoncomplete#Complete
+autocmd FileType css set ofu=csscomplete#CompleteCSS
+autocmd FileType java set ofu=javacomplete#Complete
+
+" use syntax complete if nothing else available
+if has("autocmd") && exists("+omnifunc")
+  autocmd Filetype *
+    \ if &omnifunc == "" |
+    \   setl ofu=syntaxcomplete#Complete |
+    \ endif
+endif
+set completeopt=longest,menu
 
 " SuperTab
 let g:SuperTabDefaultCompletionType = 'context'
 let g:SuperTabClosePreviewOnPopupClose = 1
+let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+let g:SuperTabNoCompleteAfter = ['^', '\s', ',']
+let g:SuperTabContextDiscoverDiscovery = ['&completefunc:<c-x><c-u>', '&omnifunc:<c-x><c-o>']
 
 " Autopairs
 let g:AutoPairsShortcutFastWrap = '<C-f>'
@@ -177,14 +190,26 @@ let g:ttimeoutlen=50
 " Emmet
 let g:user_emmet_leader_key='<C-e>'
 
-" Clam
+" --- Clam
 let g:clam_winpos='botright'
 
-" Pycomplexity
+" --- Pycomplexity
 nnoremap <silent> <F6> :Complexity<CR>
 
-" Commentary
+" --- Commentary
 autocmd FileType nginx set commentstring=#\ %s
+
+" --- Ultisnips
+let g:ultisnips_python_style = 'sphinx'
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<tab>'
+let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
+
+" --- TagBar
+" toggle TagBar with F7
+nnoremap <silent> <F4> :TagbarToggle<CR>
+" set focus to TagBar when opening it
+let g:tagbar_autofocus = 1
 
 " Last thing to do with
 NeoBundleCheck
