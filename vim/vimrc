@@ -116,17 +116,7 @@ au FileType make,go  setl noexpandtab
 au FileType coffee,yaml,vim,ruby  setl softtabstop=2 shiftwidth=2 tabstop=2
 
 " HTML and similar templates should not be limited to 80 columns
-au FileType html  setl textwidth=0
-au FileType jinja setl textwidth=0
-
-nnoremap <F2> :NERDTreeToggle<CR>
-autocmd vimenter * if !argc() | NERDTree | endif
-autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTreeType') && b:NERDTreeType == 'primary') | q | endif
-let NERDTreeIgnore = ['\.pyc$', '\.egg-info$', '^dist$', '^build$', '^__pycache__$']
-let NERDTreeHightlightCursorline=1
-
-" --- Gundo
-nnoremap <F3> :GundoToggle<CR>
+au FileType html,jinja,jinja2  setl textwidth=0
 
 " Folding
 set foldmethod=indent
@@ -139,7 +129,6 @@ set grepprg=ack-grep\ -a
 autocmd BufWritePre * :silent! %s/\s\+$//e
 autocmd BufWritePre * :silent! %s#\($\n\)\+\%$##
 
-" --- Omnicompletion
 " Enable omni completion. (Ctrl-X Ctrl-O)
 autocmd FileType html,markdown setl ofu=htmlcomplete#CompleteTags
 autocmd FileType javascript setl ofu=javascriptcomplete#CompleteJS
@@ -148,7 +137,7 @@ autocmd FileType css set ofu=csscomplete#CompleteCSS
 autocmd FileType java set ofu=javacomplete#Complete
 
 " use syntax complete if nothing else available
-if has("autocmd") && exists("+omnifunc")
+if has('autocmd') && exists('+omnifunc')
   autocmd Filetype *
     \ if &omnifunc == "" |
     \   setl ofu=syntaxcomplete#Complete |
@@ -156,38 +145,41 @@ if has("autocmd") && exists("+omnifunc")
 endif
 set completeopt=longest,menu
 
-" SuperTab
-let g:SuperTabDefaultCompletionType = 'context'
-let g:SuperTabClosePreviewOnPopupClose = 1
-let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-let g:SuperTabNoCompleteAfter = ['^', '\s', ',']
-let g:SuperTabContextDiscoverDiscovery = ['&completefunc:<c-x><c-u>', '&omnifunc:<c-x><c-o>']
-
-" Autopairs
-let g:AutoPairsShortcutFastWrap = '<C-f>'
-let g:AutoPairsMapCR = 0
-
 " Highlight the overflow text
 " http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
 highlight OverLength ctermbg=red ctermfg=white
 au FileType python match OverLength /\%81v.\+/
 au FileType php match OverLength /\%121v.\+/
 
-" Rainbow Parentheses
+" Toggles paste mode (http://is.gd/FxlJAH)
+set pastetoggle=<F9>
+
+" Turn off search highlighting
+nmap <leader>/ :nohl<CR>
+
+" --- SuperTab
+let g:SuperTabDefaultCompletionType = 'context'
+let g:SuperTabClosePreviewOnPopupClose = 1
+let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+let g:SuperTabNoCompleteAfter = ['^', '\s', ',']
+let g:SuperTabContextDiscoverDiscovery = ['&completefunc:<c-x><c-u>', '&omnifunc:<c-x><c-o>']
+
+" --- Autopairs
+let g:AutoPairsShortcutFastWrap = '<C-f>'
+let g:AutoPairsMapCR = 0
+
+" --- Rainbow Parentheses
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
-" Toggles paste mode (http://is.gd/FxlJAH)
-set pastetoggle=<F9>
-
-" Airline
+" --- Airline
 let g:airline_powerline_fonts=1
 let g:airline_theme='dark'
 let g:ttimeoutlen=50
 
-" Emmet
+" --- Emmet
 let g:user_emmet_leader_key='<C-e>'
 
 " --- Clam
@@ -206,10 +198,20 @@ let g:UltiSnipsJumpForwardTrigger='<tab>'
 let g:UltiSnipsJumpBackwardTrigger='<s-tab>'
 
 " --- TagBar
-" toggle TagBar with F7
+" toggle TagBar with F4
 nnoremap <silent> <F4> :TagbarToggle<CR>
 " set focus to TagBar when opening it
 let g:tagbar_autofocus = 1
+
+" --- NERDTree
+nnoremap <F2> :NERDTreeToggle<CR>
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr('$') == 1 && exists('b:NERDTreeType') && b:NERDTreeType == 'primary') | q | endif
+let NERDTreeIgnore = ['\.pyc$', '\.egg-info$', '^dist$', '^build$', '^__pycache__$']
+let NERDTreeHightlightCursorline=1
+
+" --- Gundo
+nnoremap <F3> :GundoToggle<CR>
 
 " Last thing to do with
 NeoBundleCheck

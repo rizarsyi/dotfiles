@@ -35,7 +35,9 @@ install-python:
 
 install-ruby:
 	rm -rf ~/.gemrc
+	rm -rf ~/.irbrc
 	ln -s `pwd`/ruby/gemrc ~/.gemrc
+	ln -s `pwd`/ruby/irbrc ~/.irbrc
 
 install-tmux:
 	rm -rf ~/.tmux.conf
