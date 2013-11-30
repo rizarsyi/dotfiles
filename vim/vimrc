@@ -40,6 +40,7 @@ NeoBundle 'derekwyatt/vim-scala'
 NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'jmcantrell/vim-virtualenv'
 NeoBundle 'majutsushi/tagbar'
+NeoBundle 'rking/ag.vim'
 
 filetype plugin indent on
 syntax on
@@ -123,7 +124,16 @@ set foldmethod=indent
 set nofoldenable
 
 " Use ack instead of grep
-set grepprg=ack-grep\ -a
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+  command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+else
+  set grepprg="ack-grep -a"
+endif
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " trailing whitespace
 autocmd BufWritePre * :silent! %s/\s\+$//e
@@ -212,6 +222,19 @@ let NERDTreeHightlightCursorline=1
 
 " --- Gundo
 nnoremap <F3> :GundoToggle<CR>
+
+" --- Ag
+nnoremap <leader>\ :Ag<SPACE>
+let g:agprg="ag --nogroup --nocolor --column"
+
+" -- ctrlP
+if executable("ag")
+  " Use ag in CtrlP for listing files. Lightning fast and respects .gitignore
+  let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+  " ag is fast enough that CtrlP doesn't need to cache
+  let g:ctrlp_use_caching = 0
+endif
 
 " Last thing to do with
 NeoBundleCheck
