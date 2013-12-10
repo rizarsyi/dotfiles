@@ -1,6 +1,6 @@
 install: install-ack install-bash install-fonts \
-         install-git install-python install-ruby \
-         install-tmux install-vim
+         install-git install-postgres install-python \
+         install-ruby install-tmux install-vim
 
 install-ack:
 	rm -rf ~/.ackrc
@@ -27,11 +27,17 @@ install-git:
 	rm -rf ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
 
+install-postgres:
+	rm -rf ~/.psqlrc
+	ln -s `pwd`/postgres/psqlrc ~/.psqlrc
+
 install-python:
 	rm -rf ~/.ipython
 	rm -rf ~/.pdbrc
+	rm -rf ~/.pypirc
 	ln -s `pwd`/python/ipython ~/.ipython
 	ln -s `pwd`/python/pdbrc ~/.pdbrc
+	ln -s `pwd`/python/pypirc ~/.pypirc
 
 install-ruby:
 	rm -rf ~/.gemrc
