@@ -131,9 +131,6 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-# remove directory and its contents recursively
-alias purge_dir='rm -rf'
-
 alias kernel_name='uname -s'
 alias kernel_release='uname -r'
 alias kernel_version='uname -v'
@@ -145,8 +142,9 @@ if [[ ! -z `which pygmentize` ]]; then
     alias ccat="pygmentize -g"
 fi
 
-# go to previous directory
-alias back="cd $OLDPWD"
+if [[ ! -z $(command -v docker) ]]; then
+    alias docker="sudo docker "
+fi
 
 
 #==============================================================================
