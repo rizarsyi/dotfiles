@@ -50,5 +50,11 @@ if [[ -n "$PS1" ]]; then
         source $HOME/.genma/genma.sh
     fi
 
+    # NodeJS
+    if [[ -s $HOME/.nodenv/bin/nodenv ]]; then
+        export PATH=$PATH:$HOME/.nodenv/bin
+        eval "$(nodenv init -)"
+    fi
+
     source $BASH_HOME/init.sh
 fi
