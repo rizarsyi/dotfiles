@@ -43,6 +43,7 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'rking/ag.vim'
 NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'kana/vim-scratch'
+NeoBundle 'dart-lang/dart-vim-plugin'
 
 filetype plugin indent on
 syntax on
@@ -244,7 +245,8 @@ let g:syntastic_check_on_open=1
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '⚠'
 let g:syntastic_auto_jump = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 2
+let g:syntastic_ignore_files = ['\c\.dart$']
 
 " --- indentLine
 let g:indentLine_color_term = 235
