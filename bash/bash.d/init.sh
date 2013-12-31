@@ -142,10 +142,6 @@ if [[ ! -z `which pygmentize` ]]; then
     alias ccat="pygmentize -g"
 fi
 
-if [[ ! -z $(command -v docker) ]]; then
-    alias docker="sudo docker "
-fi
-
 
 #==============================================================================
 # Functions
