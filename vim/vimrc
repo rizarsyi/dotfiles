@@ -59,7 +59,6 @@ let mapleader = ','
 " display options
 set title
 set visualbell
-set textwidth=80
 set number
 set ruler
 set list
@@ -111,14 +110,11 @@ au BufRead,BufNewFile *.json set ft=javascript
 " highlight Jinja2 template as Jinja
 au BufRead,BufNewFile *.jinja2 set ft=jinja
 
-" ensure GO and Makefile always use tabs instead of spaces
+" ensure Go and Makefile always use tabs instead of spaces
 au FileType make,go  setl noexpandtab
 
 " set 2-spaces indentation for Ruby, Coffeescript, and YAML files
 au FileType coffee,yaml,vim,ruby  setl softtabstop=2 shiftwidth=2 tabstop=2
-
-" HTML and similar templates should not be limited to 80 columns
-au FileType html,jinja,jinja2  setl textwidth=0
 
 " Folding
 set foldmethod=indent
@@ -160,7 +156,6 @@ set completeopt=longest,menu
 " http://stackoverflow.com/questions/235439/vim-80-column-layout-concerns
 highlight OverLength ctermbg=red ctermfg=white
 au FileType python match OverLength /\%81v.\+/
-au FileType php match OverLength /\%121v.\+/
 
 " Toggles paste mode (http://is.gd/FxlJAH)
 set pastetoggle=<F9>
