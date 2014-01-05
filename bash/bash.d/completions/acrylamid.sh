@@ -27,10 +27,6 @@ _acrylamid() {
             COMPREPLY=( $(compgen -W "--force --dry-run --ignore --port" -- ${cur}) )
             return 0
             ;;
-        clean|rm)
-            COMPREPLY=( $(compgen -W "--force --dry-run" -- ${cur}) )
-            return 0
-            ;;
         import)
             COMPREPLY=( $(compgen -W "--force --keep-links --pandoc" -- ${cur}) )
             return 0
