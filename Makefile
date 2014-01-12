@@ -37,7 +37,6 @@ install-python:
 	rm -rf ~/.pypirc
 	ln -s `pwd`/python/ipython ~/.ipython
 	ln -s `pwd`/python/pdbrc ~/.pdbrc
-	ln -s `pwd`/python/pypirc ~/.pypirc
 
 install-ruby:
 	rm -rf ~/.gemrc
