@@ -243,5 +243,9 @@ let g:syntastic_auto_loc_list = 2
 let g:indentLine_color_term = 235
 let g:indentLine_char = '¦'
 
+" --- UltiSnips
+let g:UltiSnipsSnippetDirectories = ['UltiSnips', 'snippets']
+let g:UltiSnipsDontReverseSearchPath="1"
+
 " Last thing to do with
 NeoBundleCheck
