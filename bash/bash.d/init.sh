@@ -102,9 +102,9 @@ fi
 # http://wiki.archlinux.org/index.php/Sudo#Passing_aliases
 alias sudo='sudo '
 
-# Hub is best aliased as Git
-if [[ ! -z `which git` && ! -z `which ruby` && ! -z `which hub` ]]; then
-    alias git=hub
+# gh is best aliased as Git
+if [[ ! -z `command -v git` && ! -z `command -v gh` ]]; then
+    alias git=gh
 fi
 
 # Force `tmux` to assume the terminal supports 256 colours.
