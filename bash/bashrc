@@ -10,7 +10,7 @@ if [[ -n "$PS1" ]]; then
     export BASH_THEME='equator'
     export TERM="xterm-256color"
 
-    export PATH=$PATH:$BASH_HOME/bin
+    export PATH=$PATH:$HOME/.bin
 
     # Pythons!
     export IPYTHONDIR=$HOME/.ipython
