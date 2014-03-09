@@ -1,4 +1,4 @@
-install: install-ack install-bash install-bin \
+install: install-ack install-bash \
          install-fonts install-git install-postgres \
          install-python install-ruby install-tmux install-vim
 
@@ -15,10 +15,6 @@ install-bash:
 	ln -s `pwd`/bash/bash_logout ~/.bash_logout
 	ln -s `pwd`/bash/bash_profile ~/.bash_profile
 	ln -s `pwd`/bash/bashrc ~/.bashrc
-
-install-bin:
-	rm -rf ~/.bin
-	ln -s `pwd`/bin ~/.bin
 
 install-fonts:
 	rm -rf ~/.fonts
