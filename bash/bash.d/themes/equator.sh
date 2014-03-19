@@ -15,13 +15,13 @@ CLR_WHITE="[37m"    # White
 # VCS prompt color
 function __equator.vcprompt() {
     if [[ ! -z `which vcprompt` ]]; then
-        `which vcprompt` -f $'\e[37mon \e[35m%n\e[37m:\e[33m%b\e[32m%m%u'
+        `which vcprompt` -f $'\e[37m(\e[35m%n\e[37m:\e[33m%b\e[32m%m%u\e[37m)'
     fi
 }
 
-EQ_PROMPT='\e${TXT_BOLD}\e${CLR_MAGENTA}\u \
-\e${CLR_WHITE}at \e${CLR_YELLOW}\h \
-\e${CLR_WHITE}in \e${CLR_GREEN}\w \
+EQ_PROMPT='\e${TXT_BOLD}\e${CLR_MAGENTA}\u\
+\e${CLR_WHITE}@\e${CLR_YELLOW}\h\
+\e${CLR_WHITE}:\e${CLR_GREEN}\w \
 `__equator.vcprompt` \e${RESET_ATTR}'
 
 # Set the title
@@ -34,4 +34,4 @@ case "$TERM" in
 esac
 
 PS1="${TITLEBAR}${EQ_PROMPT}
-➜ "
+» "
