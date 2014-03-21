@@ -19,10 +19,7 @@ function __equator.vcprompt() {
     fi
 }
 
-EQ_PROMPT='\e${TXT_BOLD}\e${CLR_MAGENTA}\u\
-\e${CLR_WHITE}@\e${CLR_YELLOW}\h\
-\e${CLR_WHITE}:\e${CLR_GREEN}\w \
-`__equator.vcprompt` \e${RESET_ATTR}'
+EQ_PROMPT='\e${TXT_BOLD}\e${CLR_GREEN}\w `__equator.vcprompt` \e${RESET_ATTR}'
 
 # Set the title
 case "$TERM" in
