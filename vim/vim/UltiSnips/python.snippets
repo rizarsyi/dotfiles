@@ -1,0 +1,62 @@
+snippet future "import __future__"
+from __future__ import (
+    absolute_import,
+    division,
+    print_function,
+    unicode_literals,
+)
+
+endsnippet
+
+snippet pdb "pdb"
+import pdb; pdb.set_trace()
+
+endsnippet
+
+snippet ifmain "ifmain" b
+if __name__ == "__main__":
+	${1:main()}$0
+endsnippet
+
+snippet from "from module import name" b
+from ${1:module} import ${2:Stuff}
+endsnippet
+
+##########################
+# Try / Except / Finally #
+##########################
+snippet try "Try / Except" b
+try:
+	${1:pass}
+except ${2:Exception} as ${3:exc}:
+	${4:raise $3}
+endsnippet
+
+snippet try "Try / Except / Else" b
+try:
+	${1:pass}
+except ${2:Exception} as ${3:exc}:
+	${4:raise $3}
+else:
+	${5:pass}
+endsnippet
+
+snippet try "Try / Except / Finally" b
+try:
+	${1:pass}
+except ${2:Exception} as ${3:exc}:
+	${4:raise $3}
+finally:
+	${5:pass}
+endsnippet
+
+snippet try "Try / Except / Else / Finally" b
+try:
+	${1:pass}
+except${2: ${3:Exception} as ${4:exc}}:
+	${5:raise}
+else:
+	${6:pass}
+finally:
+	${7:pass}
+endsnippet
