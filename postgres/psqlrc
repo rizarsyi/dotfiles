@@ -1,11 +1,19 @@
-\pset null 'NULL'
+-- NULL normally displays as an empty string. Make it obvious when a field is
+-- NULL rather than an actual empty string.
+\pset null [null]
+
+-- Always autocomplete keywords using uppercase.
+\set COMP_KEYWORD_CASE upper
 
 \set PROMPT1 '%n@%M:%>%x %/ ~> '
 \set PROMPT2 ''
+
 \set AUTOCOMMIT off
 \set eav 'EXPLAIN ANALYZE VERBOSE'
-\set HISTSIZE 20
+
+\set HISTSIZE
 \set HISTFILE ~/.psql_history- :DBNAME
 
 \timing on
 \pset pager always
+\x auto
