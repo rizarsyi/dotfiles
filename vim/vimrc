@@ -19,7 +19,6 @@ NeoBundle 'othree/html5.vim'
 NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Lokaltog/vim-easymotion'
-" NeoBundle 'jnwhiteh/vim-golang'
 NeoBundle 'SirVer/ultisnips'
 NeoBundle 'mileszs/ack.vim'
 NeoBundle 'jiangmiao/auto-pairs'
@@ -43,6 +42,7 @@ NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'kana/vim-scratch'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'wting/rust.vim'
 
 filetype plugin indent on
 syntax on
