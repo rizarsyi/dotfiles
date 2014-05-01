@@ -54,5 +54,11 @@ if [[ -n "$PS1" ]]; then
         eval "$(nodenv init -)"
     fi
 
+    # Rust
+    if [[ -s $HOME/.rsenv/bin/rsenv ]]; then
+        export PATH=$PATH:$HOME/.rsenv/bin
+        eval "$(rsenv init -)"
+    fi
+
     source $BASH_HOME/init.sh
 fi
