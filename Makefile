@@ -1,6 +1,6 @@
 install: install-ack install-bash \
          install-fonts install-git install-postgres \
-         install-python install-ruby install-tmux install-vim
+         install-python install-tmux install-vim
 
 install-ack:
 	rm -rf ~/.ackrc
@@ -37,12 +37,6 @@ install-python:
 	rm -rf ~/.pypirc
 	ln -s `pwd`/python/ipython ~/.ipython
 	ln -s `pwd`/python/pdbrc ~/.pdbrc
-
-install-ruby:
-	rm -rf ~/.gemrc
-	rm -rf ~/.irbrc
-	ln -s `pwd`/ruby/gemrc ~/.gemrc
-	ln -s `pwd`/ruby/irbrc ~/.irbrc
 
 install-tmux:
 	rm -rf ~/.tmux.conf

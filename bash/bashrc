@@ -20,12 +20,6 @@ if [[ -n "$PS1" ]]; then
         pyenv virtualenvwrapper >&/dev/null
     fi
 
-    # Rubies!
-    if [[ -s $HOME/.rbenv/bin/rbenv ]]; then
-        export PATH=$PATH:$HOME/.rbenv/bin
-        eval "$(rbenv init -)"
-    fi
-
     # Erlang/OTPs!
     if [[ -s $HOME/.erlenv/bin/erlenv ]]; then
         export PATH=$PATH:$HOME/.erlenv/bin
