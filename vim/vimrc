@@ -27,7 +27,6 @@ NeoBundle 'sjl/clam.vim'
 NeoBundle 'chrisbra/Recover.vim'
 NeoBundle 'tpope/vim-haml'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'saltstack/salt-vim'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'mitsuhiko/vim-jinja'
 NeoBundle 'mitsuhiko/vim-rst'
@@ -43,6 +42,7 @@ NeoBundle 'kana/vim-scratch'
 NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'wting/rust.vim'
+NeoBundle 'chase/vim-ansible-yaml'
 
 filetype plugin indent on
 syntax on

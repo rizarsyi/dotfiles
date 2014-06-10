@@ -26,12 +26,6 @@ if [[ -n "$PS1" ]]; then
         eval "$(erlenv init -)"
     fi
 
-    # Elixir
-    if [[ -s $HOME/.exenv/bin/exenv ]]; then
-        export PATH=$PATH:$HOME/.exenv/bin
-        eval "$(exenv init -)"
-    fi
-
     # Go
     if [[ -s $HOME/.goenv/bin/goenv ]]; then
         export PATH=$PATH:$HOME/.goenv/bin
@@ -52,6 +46,12 @@ if [[ -n "$PS1" ]]; then
     if [[ -s $HOME/.rsenv/bin/rsenv ]]; then
         export PATH=$PATH:$HOME/.rsenv/bin
         eval "$(rsenv init -)"
+    fi
+
+    # Ruby!
+    if [[ -s $HOME/.rbenv/bin/rbenv ]]; then
+        export PATH=$PATH:$HOME/.rbenv/bin
+        eval "$(rbenv init -)"
     fi
 
     source $BASH_HOME/init.sh
