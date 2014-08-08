@@ -20,7 +20,6 @@ NeoBundle 'evanmiller/nginx-vim-syntax'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'SirVer/ultisnips'
-NeoBundle 'mileszs/ack.vim'
 NeoBundle 'jiangmiao/auto-pairs'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'sjl/clam.vim'
@@ -43,6 +42,7 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'fatih/vim-go'
 NeoBundle 'wting/rust.vim'
 NeoBundle 'chase/vim-ansible-yaml'
+NeoBundle '29decibel/vim-stringify'
 
 filetype plugin indent on
 syntax on
@@ -121,13 +121,11 @@ au FileType coffee,yaml,vim,ruby  setl softtabstop=2 shiftwidth=2 tabstop=2
 set foldmethod=indent
 set nofoldenable
 
-" Use ack instead of grep
+" Use ag instead of grep
 if executable('ag')
   " Use ag over grep
   set grepprg=ag\ --nogroup\ --nocolor
   command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-else
-  set grepprg="ack-grep -a"
 endif
 
 " bind K to grep word under cursor
