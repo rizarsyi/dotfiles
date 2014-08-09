@@ -13,6 +13,7 @@ if [[ -n "$PS1" ]]; then
     # Pythons!
     export IPYTHONDIR=$HOME/.ipython
     export WORKON_HOME=$HOME/.virtualenv
+    export HOSTALIASES=$HOME/.hosts
 
     if [[ -s $HOME/.pyenv/bin/pyenv ]]; then
         export PATH=$PATH:$HOME/.pyenv/bin
