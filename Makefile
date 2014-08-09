@@ -2,10 +2,6 @@ install: install-ack install-bash \
          install-fonts install-git install-postgres \
          install-python install-tmux install-vim
 
-install-ack:
-	rm -rf ~/.ackrc
-	ln -s `pwd`/ack/ackrc ~/.ackrc
-
 install-bash:
 	rm -rf ~/.bash.d
 	rm -rf ~/.bash_logout
