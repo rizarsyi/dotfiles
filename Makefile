@@ -1,6 +1,6 @@
 install: install-ack install-bash \
-         install-fonts install-git install-postgres \
-         install-python install-tmux install-vim
+         install-fonts install-git install-mad \
+         install-postgres install-python install-tmux install-vim
 
 install-bash:
 	rm -rf ~/.bash.d
@@ -22,6 +22,10 @@ install-fonts:
 install-git:
 	rm -rf ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
+
+install-mad:
+	rm -rf ~/.mad
+	ln -s `pwd`/mad ~/.mad
 
 install-postgres:
 	rm -rf ~/.psqlrc

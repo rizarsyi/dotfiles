@@ -9,6 +9,7 @@ if [[ -n "$PS1" ]]; then
     export IMAGE_VIEWER='gthumb'
     export BASH_THEME='equator'
     export TERM="xterm-256color"
+    export MAD_PATH=$HOME/.mad
 
     # Pythons!
     export IPYTHONDIR=$HOME/.ipython
