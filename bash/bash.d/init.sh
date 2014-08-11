@@ -112,10 +112,6 @@ if [[ ! -z `which tmux` ]]; then
     alias="tmux -2"
 fi
 
-# Actually ack in Ubuntu is reserved as another command,
-# but for convenience i'd like to use the ack namespace
-alias ack=ack-grep
-
 # Sometime the cursor freezes, so bring back the cursor alive
 alias tpoff="synclient TouchPadOff=true"
 
@@ -123,8 +119,6 @@ alias tpoff="synclient TouchPadOff=true"
 alias ports='netstat -napt | ack -i LISTEN'
 
 alias remote-ip='curl ifconfig.me'
-
-alias srv='python -m SimpleHTTPServer '
 
 # some more ls aliases
 alias ll='ls -alF'

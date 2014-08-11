@@ -12,13 +12,6 @@ install-bash:
 	ln -s `pwd`/bash/bash_profile ~/.bash_profile
 	ln -s `pwd`/bash/bashrc ~/.bashrc
 
-install-fonts:
-	rm -rf ~/.fonts
-	ln -s `pwd`/fonts/fonts ~/.fonts
-	sudo rm -rf /etc/fonts/conf.d/10-powerline-symbols.conf
-	sudo ln -s ~/.fonts/10-powerline-symbols.conf /etc/fonts/conf.d/10-powerline-symbols.conf
-	fc-cache -vf ~/.fonts
-
 install-git:
 	rm -rf ~/.gitconfig
 	ln -s `pwd`/git/gitconfig ~/.gitconfig
