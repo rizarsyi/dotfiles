@@ -33,6 +33,7 @@ if [[ -n "$PS1" ]]; then
         export PATH=$PATH:$HOME/.goenv/bin
         eval "$(goenv init -)"
     fi
+    export GOAT_ACTUALGO=$(command -v go)
 
     if [[ -s $HOME/.genma/genma.sh ]]; then
         source $HOME/.genma/genma.sh
