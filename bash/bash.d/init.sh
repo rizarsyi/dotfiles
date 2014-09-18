@@ -140,6 +140,8 @@ if [[ ! -z $(command -v goat) ]]; then
     alias go="goat"
 fi
 
+alias hgrep='history|grep '
+
 
 #==============================================================================
 # Functions
