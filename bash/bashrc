@@ -24,9 +24,8 @@ if [[ -n "$PS1" ]]; then
 
     # Go
     if [[ -s $HOME/.goenv/bin/goenv ]]; then
-        export PATH=$PATH:$HOME/.goenv/bin
+        export PATH=$PATH:$HOME/.goenv/bin:$HOME/.gobin
         eval "$(goenv init -)"
-        export GOAT_ACTUALGO=$(command -v go)
     fi
 
     # NodeJS

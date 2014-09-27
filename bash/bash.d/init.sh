@@ -136,10 +136,6 @@ if [[ ! -z `which pygmentize` ]]; then
     alias ccat="pygmentize -g"
 fi
 
-if [[ ! -z $(command -v goat) ]]; then
-    alias go="goat"
-fi
-
 alias hgrep='history|grep '
 
 
