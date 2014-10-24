@@ -1,5 +1,5 @@
-install: install-ack install-bash \
-         install-fonts install-git install-mad \
+install: install-bash \
+         install-git install-mad \
          install-postgres install-python install-tmux install-vim
 
 install-bash:
