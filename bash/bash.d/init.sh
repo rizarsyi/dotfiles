@@ -108,7 +108,7 @@ if [[ ! -z `command -v git` && ! -z `command -v hub` ]]; then
 fi
 
 # Force `tmux` to assume the terminal supports 256 colours.
-if [[ ! -z `which tmux` ]]; then
+if [[ ! -z `command -v tmux` ]]; then
     alias="tmux -2"
 fi
 
@@ -132,7 +132,7 @@ alias kernel_version='uname -v'
 alias dirsize='du -sh'
 
 # highlight sourcecode
-if [[ ! -z `which pygmentize` ]]; then
+if [[ ! -z `command -v pygmentize` ]]; then
     alias ccat="pygmentize -g"
 fi
 
