@@ -103,8 +103,8 @@ fi
 alias sudo='sudo '
 
 # gh is best aliased as Git
-if [[ ! -z `command -v git` && ! -z `command -v gh` ]]; then
-    alias git=gh
+if [[ ! -z `command -v git` && ! -z `command -v hub` ]]; then
+    eval "$(hub alias -s)"
 fi
 
 # Force `tmux` to assume the terminal supports 256 colours.
