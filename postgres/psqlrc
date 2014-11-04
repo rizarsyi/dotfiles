@@ -5,9 +5,6 @@
 -- Always autocomplete keywords using uppercase.
 \set COMP_KEYWORD_CASE upper
 
-\set PROMPT1 '%n@%M:%>%x %/ ~> '
-\set PROMPT2 ''
-
 \set AUTOCOMMIT off
 \set eav 'EXPLAIN ANALYZE VERBOSE'
 
