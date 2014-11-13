@@ -116,7 +116,7 @@ fi
 alias tpoff="synclient TouchPadOff=true"
 
 # List of reserved ports, use `sudo ports` for more details
-alias ports='netstat -napt | ack -i LISTEN'
+alias ports='netstat -napt | ag -i LISTEN'
 
 alias remote-ip='curl ifconfig.me'
 
