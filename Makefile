@@ -1,6 +1,5 @@
-install: install-bash \
-         install-git install-mad \
-         install-postgres install-python install-tmux install-vim
+install: install-bash install-mad install-postgres \
+         install-python install-tmux install-vim
 
 install-bash:
 	rm -rf ~/.bash.d
@@ -11,10 +10,6 @@ install-bash:
 	ln -s `pwd`/bash/bash_logout ~/.bash_logout
 	ln -s `pwd`/bash/bash_profile ~/.bash_profile
 	ln -s `pwd`/bash/bashrc ~/.bashrc
-
-install-git:
-	rm -rf ~/.gitconfig
-	ln -s `pwd`/git/gitconfig ~/.gitconfig
 
 install-mad:
 	rm -rf ~/.mad
