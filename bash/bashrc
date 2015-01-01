@@ -34,11 +34,5 @@ if [[ -n "$PS1" ]]; then
         eval "$(nodenv init -)"
     fi
 
-    # Ruby!
-    if [[ -s $HOME/.rbenv/bin/rbenv ]]; then
-        export PATH=$PATH:$HOME/.rbenv/bin
-        eval "$(rbenv init -)"
-    fi
-
     source $BASH_HOME/init.sh
 fi
