@@ -46,6 +46,7 @@ NeoBundle 'mxw/vim-jsx'
 NeoBundle 'guns/vim-clojure-static'
 NeoBundle 'tpope/vim-fireplace'
 NeoBundle 'vim-scripts/po.vim'
+NeoBundle 'cespare/vim-toml'
 
 filetype plugin indent on
 syntax on
