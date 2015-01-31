@@ -34,5 +34,11 @@ if [[ -n "$PS1" ]]; then
         eval "$(nodenv init -)"
     fi
 
+    # gopsi
+    if [[ -s $HOME/.gopsi/bin/gopsi ]]; then
+        export PATH=$PATH:$HOME/.gopsi/bin
+        eval "$(gopsi init -)"
+    fi
+
     source $BASH_HOME/init.sh
 fi
