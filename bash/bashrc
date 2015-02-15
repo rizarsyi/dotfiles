@@ -25,6 +25,7 @@ if [[ -n "$PS1" ]]; then
     # Go
     if [[ -s $HOME/.goenv/bin/goenv ]]; then
         export PATH=$PATH:$HOME/.goenv/bin:$HOME/.gobin
+        export GOPATH=$HOME/.gopath
         eval "$(goenv init -)"
     fi
 

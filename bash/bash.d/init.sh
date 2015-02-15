@@ -181,3 +181,14 @@ function arch_name() {
 function os_name() {
     echo "`kernel_name` `head -1 /etc/issue`" | sed 's/\\.//g'
 }
+
+function mkgoprj() {
+    : ${1:?"project name is required"}
+    : ${2:?"package name is required"}
+
+    if [ ! -d "${GOPATH}/src/${2}" ]; then
+        mkdir -p "${GOPATH}/src/${2}"
+    fi
+
+    ln -s "${GOPATH}/src/${2}" "${PWD}/${1}"
+}
