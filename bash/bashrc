@@ -11,6 +11,7 @@ if [[ -n "$PS1" ]]; then
     export TERM="xterm-256color"
     export MAD_PATH=$HOME/.mad
     export PATH=$HOME/.local/bin:$PATH
+    export TODO_DB_PATH=$HOME/.todo.json
 
     # Pythons!
     export IPYTHONDIR=$HOME/.ipython
@@ -46,7 +47,6 @@ if [[ -n "$PS1" ]]; then
         export PATH=$PATH:$HOME/.rbenv/bin
         eval "$(rbenv init -)"
     fi
-
 
     source $BASH_HOME/init.sh
 fi
