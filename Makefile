@@ -1,4 +1,4 @@
-install: install-bash install-mad install-postgres \
+install: install-bash install-postgres \
          install-python install-tmux install-vim
 
 install-bash:
@@ -10,10 +10,6 @@ install-bash:
 	ln -s `pwd`/bash/bash_logout ~/.bash_logout
 	ln -s `pwd`/bash/bash_profile ~/.bash_profile
 	ln -s `pwd`/bash/bashrc ~/.bashrc
-
-install-mad:
-	rm -rf ~/.mad
-	ln -s `pwd`/mad ~/.mad
 
 install-postgres:
 	rm -rf ~/.psqlrc
