@@ -192,3 +192,13 @@ function mkgoprj() {
 
     ln -s "${GOPATH}/src/${2}" "${PWD}/${1}"
 }
+
+# remove all untagged docker images
+function dock-rmi-untagged() {
+    docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
+}
+
+# remove all containers (forced)
+function dock-rm-all() {
+    docker rm -f $(docker ps -aq)
+}
