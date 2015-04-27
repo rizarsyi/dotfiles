@@ -202,3 +202,8 @@ function dock-rmi-untagged() {
 function dock-rm-all() {
     docker rm -f $(docker ps -aq)
 }
+
+fix-ssh-access() {
+    : ${1:?"IP or hostname is required"}
+    ssh-keygen -f "${HOME}/.ssh/known_hosts" -R ${1}
+}
