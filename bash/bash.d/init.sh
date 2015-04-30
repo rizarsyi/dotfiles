@@ -144,13 +144,13 @@ alias hgrep='history|grep '
 #==============================================================================
 
 # create directory and go the newly created directory
-function mkcd() {
+mkcd() {
     : ${1:?"A non-empty argument is required"}
     mkdir -p "$1" && cd "$1"
 }
 
 # go to upper directory
-function up() {
+up() {
     num=$1
 
     if [[ ! -n $num ]]; then
@@ -173,16 +173,16 @@ function up() {
 }
 
 # get architecture name
-function arch_name() {
+arch-name() {
     [[ `uname -m` == 'x86_64' ]] && echo 'x64' || echo 'x86'
 }
 
 # get OS release name
-function os_name() {
+os-name() {
     echo "`kernel_name` `head -1 /etc/issue`" | sed 's/\\.//g'
 }
 
-function mkgoprj() {
+mkgoprj() {
     : ${1:?"project name is required"}
     : ${2:?"package name is required"}
 
@@ -194,12 +194,12 @@ function mkgoprj() {
 }
 
 # remove all untagged docker images
-function dock-rmi-untagged() {
+dock-rmi-untagged() {
     docker rmi $(docker images | grep "^<none>" | awk '{print $3}')
 }
 
 # remove all containers (forced)
-function dock-rm-all() {
+dock-rm-all() {
     docker rm -f $(docker ps -aq)
 }
 
