@@ -131,11 +131,6 @@ alias kernel_version='uname -v'
 
 alias dirsize='du -sh'
 
-# highlight sourcecode
-if [[ ! -z `command -v pygmentize` ]]; then
-    alias ccat="pygmentize -g"
-fi
-
 alias hgrep='history|grep '
 
 
