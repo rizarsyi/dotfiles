@@ -198,6 +198,11 @@ dock-rm-all() {
     docker rm -f $(docker ps -aq)
 }
 
+# remove all exited containers (forced)
+dock-rm-exited() {
+    docker rm -f $(docker ps -qf status=exited)
+}
+
 fix-ssh-access() {
     : ${1:?"IP or hostname is required"}
     ssh-keygen -f "${HOME}/.ssh/known_hosts" -R ${1}
