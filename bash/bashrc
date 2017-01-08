@@ -21,6 +21,10 @@ if [[ -n "$PS1" ]]; then
         pyenv virtualenvwrapper >&/dev/null
     fi
 
+    if [[ -s $HOME/.python-startup.py ]]; then
+        export PYTHONSTARTUP=$HOME/.python-startup.py
+    fi
+
     # Go
     if [[ -s $HOME/.goenv/bin/goenv ]]; then
         export PATH=$PATH:$HOME/.goenv/bin:$HOME/.gobin

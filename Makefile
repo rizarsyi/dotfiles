@@ -19,8 +19,10 @@ install-python:
 	rm -rf ~/.ipython
 	rm -rf ~/.pdbrc
 	rm -rf ~/.pypirc
+	rm -rf ~/.python-startup.py
 	ln -s `pwd`/python/ipython ~/.ipython
 	ln -s `pwd`/python/pdbrc ~/.pdbrc
+	ln -s `pwd`/python/python-startup.py ~/.python-startup.py
 
 install-tmux:
 	rm -rf ~/.tmux.conf
