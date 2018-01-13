@@ -3,7 +3,7 @@
 One single repo to rule 'em all!
 
 ```sh
-$ git clone --recursive git@github.com:iromli/dotfiles.git
+$ git clone --recursive git@github.com:rizarsyi/dotfiles.git
 $ cd dotfiles
 $ make install
 ```
